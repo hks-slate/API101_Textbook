@@ -1,0 +1,73 @@
+[
+  {
+    "id": "8d0e74a9ac2dfb8877247b4df63b21c6",
+    "type": "multiple_choice",
+    "text": "Suppose that the supply and demand equations for the global market for copper are as follows: &nbsp; &nbsp; &nbsp; &nbsp;Q_D = 39 – 3P &nbsp; &nbsp; &nbsp; &nbsp;Q_S = 2P – 1 &nbsp; where quantity is in millions of metric tons and price is in US dollars ($) per kilogram. What is the market equilibrium price and quantity? Enter your answers separately in Questions 1 and 2.&nbsp;"
+  },
+  {
+    "id": "6b28a671e2dcf24fe554ebf59a18f030",
+    "type": "short_answer",
+    "text": "What is the market equilibrium price?",
+    "feedback": "&nbsp; In equilibrium, quantity demanded should equal quantity supplied, that is, we should have: Q_D = QS39 – 3P = 2P – 15P = 40P =&nbsp; 8 &nbsp; Note that price is in US dollars ($) per kilogram",
+    "correctAnswer": "8.0"
+  },
+  {
+    "id": "912f0a597f102aa0d321ec79bf9a6180",
+    "type": "short_answer",
+    "text": "What is the market equilibrium quantity?",
+    "feedback": "Plug the price of $8 per kilogram back in to either the demand or supply equation to find the equilibrium quantity: Q_D = 39 – 3*8 = 15 OR Q_S = 2*8 – 1 = 15 Since the units are in millions of metric tons, the equilibrium quantity is 15,000,000 tons. The practice quiz accepts either 15 (assuming the units are millions of metric tons) or 15,000,000 (assuming the units are tons).",
+    "correctAnswer": "15000000.0"
+  },
+  {
+    "id": "5ecc2936ff612243a6f92032b8c4def9",
+    "type": "short_answer",
+    "text": "A market has equilibrium quantity 4, a demand-curve price intercept of 4, and equilibrium price 3. Calculate consumer surplus.",
+    "feedback": "Consumer surplus is the area below the demand curve and above the equilibrium price: CS = 1/2 * 4 * (4 - 3) = 2.",
+    "correctAnswer": "2.0"
+  },
+  {
+    "id": "9f15e31c0eab99a4f92dd9770b9dc9a1",
+    "type": "short_answer",
+    "text": "Using the same market, equilibrium quantity is 4, equilibrium price is 3, and the supply-curve price intercept is 1. Calculate producer surplus.",
+    "feedback": "Producer surplus is the area above the supply curve and below the equilibrium price: PS = 1/2 * 4 * (3 - 1) = 4.",
+    "correctAnswer": "4.0"
+  },
+  {
+    "id": "ga8f3073c7f5dc6c19ee81292343aa000",
+    "type": "multiple_choice",
+    "text": "Suppose that the supply and demand equations for the global market for copper are as follows: Q_D = 39 – 3P Q_S = 2P – 1 where quantity is in millions of metric tons and price is in US dollars ($) per kilogram. What is the market equilibrium price and quantity? Enter your answers separately below."
+  },
+  {
+    "id": "g46618ef38db3f7eaa6fe188f7b183eaa",
+    "type": "short_answer",
+    "text": "What is the market equilibrium price?",
+    "feedback": "Feedback: In equilibrium, quantity demanded should equal quantity supplied, that is, we should have:Q_D = QS39 – 3P = 2P – 15P = 40P =&nbsp; 8 Note that price is in US dollars ($) per kilogram",
+    "correctAnswer": "8.0"
+  },
+  {
+    "id": "g8ba3e2884f7da8d35176c8d3226551ad",
+    "type": "short_answer",
+    "text": "What is the market equilibrium quantity?",
+    "feedback": "Feedback: Plug the price of $8 per kilogram back in to either the demand or supply equation to find the equilibrium quantity: Q_D = 39 – 3*8 = 15 OR Q_S = 2*8 – 1 = 15 Since the units are in millions of metric tons, the equilibrium quantity is 15,000,000 tons. The practice quiz accepts either 15 (assuming the units are millions of metric tons) or 15,000,000 (assuming the units are tons).",
+    "correctAnswer": "15000000.0"
+  },
+  {
+    "id": "g66c28dc09ab5003d208b189377ecae0d",
+    "type": "short_answer",
+    "text": "A market has equilibrium quantity 4, a demand-curve price intercept of 4, and equilibrium price 3. Calculate consumer surplus.",
+    "feedback": "Consumer surplus is the area below the demand curve and above the equilibrium price: CS = 1/2 * 4 * (4 - 3) = 2.",
+    "correctAnswer": "2.0"
+  },
+  {
+    "id": "gec6cffaf1c75bd1cd9fced5ea2c1fefa",
+    "type": "short_answer",
+    "text": "Using the same market, equilibrium quantity is 4, equilibrium price is 3, and the supply-curve price intercept is 1. Calculate producer surplus.",
+    "feedback": "Producer surplus is the area above the supply curve and below the equilibrium price: PS = 1/2 * 4 * (3 - 1) = 4.",
+    "correctAnswer": "4.0"
+  },
+  {
+    "id": "g1a157f186beeeee8ef4fc23235bcb02a",
+    "type": "multiple_choice",
+    "text": "After you submit this quiz, read the feedback and consider whether there is module content you wish to review."
+  }
+]

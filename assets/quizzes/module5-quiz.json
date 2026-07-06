@@ -1,0 +1,130 @@
+[
+  {
+    "id": "m5-copper-price",
+    "module": "Module 5",
+    "skill": "Equilibrium Review",
+    "type": "short_answer",
+    "text": "For a market with \\(Q_D = 39 - 3P\\) and \\(Q_S = 2P - 1\\), what is the equilibrium price?",
+    "feedback": "Set \\(Q_D = Q_S\\): \\(39 - 3P = 2P - 1\\). Then \\(40 = 5P\\), so \\(P^* = 8\\).",
+    "correctAnswer": "8",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m5-copper-quantity",
+    "module": "Module 5",
+    "skill": "Equilibrium Review",
+    "type": "short_answer",
+    "text": "Using the equilibrium price found in Question 1, what is the equilibrium quantity in the market with \\(Q_D = 39 - 3P\\) and \\(Q_S = 2P - 1\\)? Enter the answer in millions of metric tons.",
+    "feedback": "Substitute \\(P = 8\\): \\(Q_D = 39 - 3(8) = 15\\), and \\(Q_S = 2(8) - 1 = 15\\). The equilibrium quantity is 15 million metric tons.",
+    "correctAnswer": "15",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m5-consumer-surplus",
+    "module": "Module 5",
+    "skill": "Consumer Surplus",
+    "type": "short_answer",
+    "text": "An inverted demand equation has a price intercept of €100. The equilibrium price is €60, and equilibrium quantity is 50 units. What is consumer surplus?",
+    "feedback": "Consumer surplus is the triangle below the demand curve and above price: \\(\\frac{1}{2} \\times 50 \\times (100 - 60) = 1000\\).",
+    "correctAnswer": "1000",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m5-producer-surplus",
+    "module": "Module 5",
+    "skill": "Producer Surplus",
+    "type": "short_answer",
+    "text": "A supply curve has a price intercept of €15. The equilibrium price is €60, and equilibrium quantity is 50 units. What is producer surplus?",
+    "feedback": "Producer surplus is the triangle above supply and below price: \\(\\frac{1}{2} \\times 50 \\times (60 - 15) = 1125\\).",
+    "correctAnswer": "1125",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m5-social-surplus",
+    "module": "Module 5",
+    "skill": "Social Surplus",
+    "type": "short_answer",
+    "text": "Using the two previous surplus values, consumer surplus is €1000 and producer surplus is €1125. What is social surplus?",
+    "feedback": "Social surplus is consumer surplus plus producer surplus: \\(1000 + 1125 = 2125\\).",
+    "correctAnswer": "2125",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m5-price-floor-dwl",
+    "module": "Module 5",
+    "skill": "Deadweight Loss",
+    "type": "multiple_choice",
+    "text": "When the government imposes a price floor above the equilibrium price, what happens to deadweight loss?",
+    "options": [
+      {
+        "text": "Deadweight loss decreases to zero.",
+        "correct": false
+      },
+      {
+        "text": "Deadweight loss increases because some mutually beneficial trades no longer occur.",
+        "correct": true
+      },
+      {
+        "text": "Deadweight loss is unaffected.",
+        "correct": false
+      },
+      {
+        "text": "Deadweight loss becomes negative.",
+        "correct": false
+      }
+    ],
+    "feedback": "A price floor above equilibrium reduces quantity traded. Trades that would have benefited both buyers and sellers no longer occur, creating deadweight loss."
+  },
+  {
+    "id": "m5-equilibrium-efficiency",
+    "module": "Module 5",
+    "skill": "Efficiency",
+    "type": "multiple_choice",
+    "text": "At the competitive market equilibrium, what is true?",
+    "options": [
+      {
+        "text": "Consumer surplus is maximized, but producer surplus is zero.",
+        "correct": false
+      },
+      {
+        "text": "Producer surplus is maximized, but consumer surplus is zero.",
+        "correct": false
+      },
+      {
+        "text": "Social surplus is maximized.",
+        "correct": true
+      },
+      {
+        "text": "There is always deadweight loss.",
+        "correct": false
+      }
+    ],
+    "feedback": "At competitive equilibrium, all mutually beneficial trades occur. Social surplus, the sum of consumer and producer surplus, is maximized."
+  },
+  {
+    "id": "m5-cap-transfer",
+    "module": "Module 5",
+    "skill": "Policy Application",
+    "type": "multiple_choice",
+    "text": "In a CAP-style price floor, which statement best separates surplus transfers from deadweight loss?",
+    "options": [
+      {
+        "text": "All producer gains are deadweight loss.",
+        "correct": false
+      },
+      {
+        "text": "Transfers move surplus between groups, while deadweight loss is value from trades that no longer happen.",
+        "correct": true
+      },
+      {
+        "text": "Consumer losses are always exactly equal to deadweight loss.",
+        "correct": false
+      },
+      {
+        "text": "Government purchases eliminate deadweight loss.",
+        "correct": false
+      }
+    ],
+    "feedback": "Redistribution changes who receives surplus. Deadweight loss is different: it is value lost because mutually beneficial trades are prevented."
+  }
+]

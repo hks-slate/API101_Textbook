@@ -1,0 +1,208 @@
+[
+  {
+    "id": "m13-demand-law",
+    "module": "Module 1",
+    "skill": "Demand",
+    "type": "multiple_choice",
+    "text": "The sugar demand equation is \\(Q_D = 50 - 10P\\). Which statement best describes the relationship shown by this equation?",
+    "options": [
+      {
+        "text": "As price rises, quantity demanded rises.",
+        "correct": false
+      },
+      {
+        "text": "As price rises, quantity demanded falls.",
+        "correct": true
+      },
+      {
+        "text": "Price does not affect quantity demanded.",
+        "correct": false
+      },
+      {
+        "text": "The demand curve slopes upward because buyers respond to incentives.",
+        "correct": false
+      }
+    ],
+    "feedback": "The coefficient on \\(P\\) is negative: each €1 increase in price reduces quantity demanded by 10 million kilograms. That is the law of demand."
+  },
+  {
+    "id": "m13-demand-calculate",
+    "module": "Module 1",
+    "skill": "Demand",
+    "type": "short_answer",
+    "text": "Using \\(Q_D = 50 - 10P\\), what is quantity demanded when \\(P = 3.5\\)? Enter the answer in millions of kilograms.",
+    "feedback": "Substitute \\(P = 3.5\\): \\(Q_D = 50 - 10(3.5) = 50 - 35 = 15\\). Quantity demanded is 15 million kilograms.",
+    "correctAnswer": "15",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m13-demand-invert",
+    "module": "Module 1",
+    "skill": "Demand",
+    "type": "multiple_choice",
+    "text": "Which of the following corresponds to the inverse demand equation when demand is \\(Q_D = 50 - 10P\\)?",
+    "options": [
+      {
+        "text": "\\(P = 50 - 10Q_D\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 5 - (1/10)Q_D\\)",
+        "correct": true
+      },
+      {
+        "text": "\\(P = (1/10)Q_D - 5\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 10Q_D - 50\\)",
+        "correct": false
+      }
+    ],
+    "feedback": "Start with \\(Q_D = 50 - 10P\\). Then \\(10P = 50 - Q_D\\), so \\(P = 5 - (1/10)Q_D\\)."
+  },
+  {
+    "id": "m13-supply-law",
+    "module": "Module 2",
+    "skill": "Supply",
+    "type": "multiple_choice",
+    "text": "The sugar supply equation is \\(Q_S = 15P\\). What happens to quantity supplied when price rises?",
+    "options": [
+      {
+        "text": "Quantity supplied rises because higher prices make production more attractive.",
+        "correct": true
+      },
+      {
+        "text": "Quantity supplied falls because higher prices reduce producer revenue.",
+        "correct": false
+      },
+      {
+        "text": "Quantity supplied stays fixed because supply is independent of price.",
+        "correct": false
+      },
+      {
+        "text": "Quantity supplied becomes negative at higher prices.",
+        "correct": false
+      }
+    ],
+    "feedback": "The coefficient on \\(P\\) is positive. In this model, each €1 increase in price increases quantity supplied by 15 million kilograms."
+  },
+  {
+    "id": "m13-supply-calculate",
+    "module": "Module 2",
+    "skill": "Supply",
+    "type": "short_answer",
+    "text": "Using \\(Q_S = 15P\\), what is quantity supplied when \\(P = 3\\)? Enter the answer in millions of kilograms.",
+    "feedback": "Substitute \\(P = 3\\): \\(Q_S = 15(3) = 45\\). Quantity supplied is 45 million kilograms.",
+    "correctAnswer": "45",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m13-supply-invert",
+    "module": "Module 2",
+    "skill": "Supply",
+    "type": "multiple_choice",
+    "text": "Which of the following corresponds to the inverse supply equation when supply is \\(Q_S = 15P\\)?",
+    "options": [
+      {
+        "text": "\\(P = 15Q_S\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 15 - Q_S\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = (1/15)Q_S\\)",
+        "correct": true
+      },
+      {
+        "text": "\\(P = 50 - (1/10)Q_S\\)",
+        "correct": false
+      }
+    ],
+    "feedback": "Divide both sides of \\(Q_S = 15P\\) by 15 to isolate price: \\(P = (1/15)Q_S\\)."
+  },
+  {
+    "id": "m13-equilibrium-price",
+    "module": "Module 3",
+    "skill": "Equilibrium",
+    "type": "short_answer",
+    "text": "Find the equilibrium price when \\(Q_D = 72 - 8P\\) and \\(Q_S = 12P\\).",
+    "feedback": "Set quantity demanded equal to quantity supplied: \\(72 - 8P = 12P\\). Then \\(72 = 20P\\), so \\(P^* = 3.6\\).",
+    "correctAnswer": "3.6",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m13-equilibrium-quantity",
+    "module": "Module 3",
+    "skill": "Equilibrium",
+    "type": "short_answer",
+    "text": "Find the equilibrium quantity when \\(Q_D = 60 - 6P\\) and \\(Q_S = 4P\\). Enter the answer in millions of kilograms.",
+    "feedback": "Set \\(60 - 6P = 4P\\), so \\(60 = 10P\\) and \\(P^* = 6\\). Substitute back in: \\(Q_S = 4(6) = 24\\), so equilibrium quantity is 24 million kilograms.",
+    "correctAnswer": "24",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m13-surplus-condition",
+    "module": "Module 3",
+    "skill": "Surplus",
+    "type": "multiple_choice",
+    "text": "At \\(P = 5\\), \\(Q_D = 30\\) and \\(Q_S = 50\\). What market condition results, and what pressure does it create?",
+    "options": [
+      {
+        "text": "A shortage of 20 million kilograms; upward pressure on price.",
+        "correct": false
+      },
+      {
+        "text": "A surplus of 20 million kilograms; downward pressure on price.",
+        "correct": true
+      },
+      {
+        "text": "A surplus of 80 million kilograms; upward pressure on price.",
+        "correct": false
+      },
+      {
+        "text": "No imbalance; the market is in equilibrium.",
+        "correct": false
+      }
+    ],
+    "feedback": "Quantity supplied exceeds quantity demanded by \\(50 - 30 = 20\\). Unsold output creates a surplus, which normally puts downward pressure on price."
+  },
+  {
+    "id": "m13-shortage-condition",
+    "module": "Module 3",
+    "skill": "Shortage",
+    "type": "multiple_choice",
+    "text": "At \\(P = 1\\), \\(Q_D = 40\\) and \\(Q_S = 15\\). What market condition results, and what pressure does it create?",
+    "options": [
+      {
+        "text": "A surplus of 25 million kilograms; downward pressure on price.",
+        "correct": false
+      },
+      {
+        "text": "A shortage of 25 million kilograms; upward pressure on price.",
+        "correct": true
+      },
+      {
+        "text": "A shortage of 55 million kilograms; downward pressure on price.",
+        "correct": false
+      },
+      {
+        "text": "No imbalance; quantity demanded equals quantity supplied.",
+        "correct": false
+      }
+    ],
+    "feedback": "Quantity demanded exceeds quantity supplied by \\(40 - 15 = 25\\). Buyers want more than sellers provide, creating upward pressure on price."
+  },
+  {
+    "id": "m13-cap-surplus",
+    "module": "Module 3",
+    "skill": "Policy Application",
+    "type": "short_answer",
+    "text": "Under a price floor at \\(P = 4.5\\), if \\(Q_S = 54\\) and \\(Q_D = 27\\), how many million kilograms of surplus are created?",
+    "feedback": "The surplus is \\(Q_S - Q_D = 54 - 27 = 27\\). A price floor above equilibrium creates 27 million kilograms of excess supply.",
+    "correctAnswer": "27",
+    "tolerance": 0.01
+  }
+]

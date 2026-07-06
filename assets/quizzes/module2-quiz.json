@@ -1,0 +1,423 @@
+[
+  {
+    "id": "g949725587984d6c28fa9ccb6222721a5",
+    "type": "multiple_choice",
+    "text": "Suppose you are given an estimate of the demand and supply curves for airline service between China’s two most populous cities, Beijing and Shanghai. A number of changes that might affect the market for this service are listed in Questions 1-4. In each case, indicate which shift is most likely to occur, if any."
+  },
+  {
+    "id": "g6e3f98ddf889e1050c9fdb4b554c0a63",
+    "type": "multiple_choice",
+    "text": "China attracts a lot of new foreign investors, who tend to travel around the country frequently and who put a premium on transportation speed.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: In this case, the demand curve shifts outward: A new group of consumers demands the service."
+  },
+  {
+    "id": "g199853fd497449e2fd82e3625b6d0db7",
+    "type": "multiple_choice",
+    "text": "The quality of a no-toll highway connecting the two cities deteriorates.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The demand curve shifts outward: A substitute becomes less attractive."
+  },
+  {
+    "id": "g7dd7a79ca566e74998fd741dfd2fb063",
+    "type": "multiple_choice",
+    "text": "The price of airplane fuel rises.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Both supply and demand curves shift in.",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The supply curve shifts inward: Airplane fuel is an input cost, so its increase will cause supply to shift inward. This supply shift will in turn lead to a movement along the demand curve, but not a shift of it."
+  },
+  {
+    "id": "gb838721fb72eb13839b0181b5dafd0a1",
+    "type": "multiple_choice",
+    "text": "The state lowers the price of airline service.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": true
+      }
+    ],
+    "feedback": "Feedback: The demand and supply curves do not shift: People will buy more plane tickets, but only because of the change in price; i.e., they will move down along the demand curve."
+  },
+  {
+    "id": "ga6f2a4a82b9980dfc6acfe8f8296ccb0",
+    "type": "multiple_choice",
+    "text": "Suppose that the demand curve for a good is represented by P = 210 – 10Q_D. A decrease in the price of the good’s substitute has led to a reduction in demand for the original good by 10 units for each unit in price. &nbsp;&nbsp; &nbsp;What is the equation for the new demand curve?",
+    "options": [
+      {
+        "text": "P = 200 – Q_D",
+        "correct": false
+      },
+      {
+        "text": "P&nbsp; = 210 – Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 200 – 10Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 110 – 10Q_D",
+        "correct": true
+      },
+      {
+        "text": "P = 100 – Q_D",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: We can solve this problem by plugging in values for P = 210 – 10Q_D. For example, if Q_D = 20, then P = 10. A decrease in demand by 10 units for each unit in price means that when P = 10, then Q_D = 10 instead of 20. With these new values (P = 10, Q_D = 10), we can solve for the equation of the new demand curve. P&nbsp;&nbsp;&nbsp;&nbsp; = &nbsp; &nbsp; Intercept – 10Q_D. 10&nbsp;&nbsp;&nbsp; = &nbsp; &nbsp; Intercept – 10(10)Intercept = 110 Thus, the new equation is P = 110 – 10Q_D."
+  },
+  {
+    "id": "g29630386c0a5ed8f1ecaacc621b7498a",
+    "type": "multiple_choice",
+    "text": "Suppose that the supply curve for a good is represented by P = 4Q_S + 10. An improvement in technology allows suppliers to save $2 per unit in their production of the good.&nbsp;&nbsp; &nbsp;What is the inverse supply equation for the new supply curve?",
+    "options": [
+      {
+        "text": "P = 4Q_S + 8",
+        "correct": true
+      },
+      {
+        "text": "P = 4Q_S + 12",
+        "correct": false
+      },
+      {
+        "text": "P = 6Q_S + 12",
+        "correct": false
+      },
+      {
+        "text": "P = 6Q_S + 10",
+        "correct": false
+      },
+      {
+        "text": "P = 8Q_S + 10",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: An improvement in technology leads to an outward shift in the supply curve. Thus, the slope remains the same, but the intercept will shift 2 units downward. &nbsp;&nbsp; &nbsp;In this case, the intercept is 10, so the new supply equation is: P = 4Q_S + 8."
+  },
+  {
+    "id": "g871f840fa91a9d16d68d759bb57b77f9",
+    "type": "short_answer",
+    "text": "An outward shift in both demand and supply moves equilibrium quantity from 4 to 7.5. What is the change in equilibrium quantity? Round to the nearest 0.5.",
+    "feedback": "Feedback: Before the shifters, the quantity at equilibrium was 4 as this is where the demand and supply curves intersect. After the supply and demand shifters, the new quantity at equilibrium is 7.5. &nbsp; Thus, the change is 7.5 – 4 = 3.5.",
+    "correctAnswer": "3.5"
+  },
+  {
+    "id": "gfad1dc1415ca520958332a34bae3cb96",
+    "type": "multiple_choice",
+    "text": "If both demand and supply curves for a given good shift outward, what can we conclude about the new equilibrium price and quantity?",
+    "options": [
+      {
+        "text": "Quantity decreases; price increases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price decreases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price increases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price may or may not change",
+        "correct": true
+      },
+      {
+        "text": "We cannot make any certain conclusions about price and quantity",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: If both demand and supply shift outward, equilibrium quantity must increase. Price may rise, fall, or stay the same depending on which curve shifts more. If demand shifts more than supply, price rises; if supply shifts more than demand, price falls; if the shifts offset, price can stay roughly the same."
+  },
+  {
+    "id": "g372d7fb6673f519847dd75e76d789afe",
+    "type": "multiple_choice",
+    "text": "After you submit this quiz, read the feedback and consider whether there is module content you wish to review."
+  },
+  {
+    "id": "d35428922729b1a5edc5e6bb37073ddf",
+    "type": "multiple_choice",
+    "text": "Suppose you are given an estimate of the demand and supply curves for airline service between China&#x2019;s two most populous cities, Beijing and Shanghai. A number of changes that might affect the market for this service are listed in Questions 1-4. In each case, indicate which shift is most likely to occur, if any."
+  },
+  {
+    "id": "ccda52997f4bd87842644c40552825a0",
+    "type": "multiple_choice",
+    "text": "China attracts a lot of new foreign investors, who tend to travel around the country frequently and who put a premium on transportation speed. &nbsp;",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": false
+      }
+    ],
+    "feedback": "In this case, the demand curve shifts outward: A new group of consumers demands the service."
+  },
+  {
+    "id": "4e322230a9aa6251e2e7ca0fb7118338",
+    "type": "multiple_choice",
+    "text": "The quality of a no-toll highway connecting the two cities deteriorates.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": false
+      }
+    ],
+    "feedback": "The demand curve shifts outward: A substitute becomes less attractive."
+  },
+  {
+    "id": "272e4f6b1252b4bd3446647c3311a613",
+    "type": "multiple_choice",
+    "text": "The price of airplane fuel rises.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": true
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Both supply and demand curves shift in.",
+        "correct": false
+      }
+    ],
+    "feedback": "The supply curve shifts inward: Airplane fuel is an input cost, so its increase will cause supply to shift inward. This supply shift will in turn lead to a movement along the demand curve, but not a shift of it."
+  },
+  {
+    "id": "1521bf882f190a37e9f456f07e0ac643",
+    "type": "multiple_choice",
+    "text": "The state lowers the price of airline service.",
+    "options": [
+      {
+        "text": "Demand curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Demand curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts in.",
+        "correct": false
+      },
+      {
+        "text": "Supply curve shifts out.",
+        "correct": false
+      },
+      {
+        "text": "No shift.",
+        "correct": true
+      }
+    ],
+    "feedback": "The demand and supply curves do not shift: People will buy more plane tickets, but only because of the change in price; i.e., they will move down along the demand curve."
+  },
+  {
+    "id": "246e862864162024214fed1db4302ad6",
+    "type": "multiple_choice",
+    "text": "&nbsp; Suppose that the demand curve for a good is represented by P = 210 – 10Q_D. A decrease in the price of the good&#x2019;s substitute has led to a reduction in demand for the original good by 10 units for each unit in price. &nbsp;&nbsp; &nbsp;What is the equation for the new demand curve? &nbsp;",
+    "options": [
+      {
+        "text": "P = 200 – Q_D",
+        "correct": false
+      },
+      {
+        "text": "P&nbsp; = 210 – Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 200 – 10Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 110 – 10Q_D",
+        "correct": true
+      },
+      {
+        "text": "P = 100 – Q_D",
+        "correct": false
+      }
+    ],
+    "feedback": "We can solve this problem by plugging in values for P = 210 – 10Q_D. For example, if Q_D = 20, then P = 10. A decrease in demand by 10 units for each unit in price means that when P = 10, then Q_D = 10 instead of 20. With these new values (P = 10, Q_D = 10), we can solve for the equation of the new demand curve. P&nbsp;&nbsp;&nbsp;&nbsp; = &nbsp; &nbsp; Intercept – 10Q_D. 10&nbsp;&nbsp;&nbsp; = &nbsp; &nbsp; Intercept – 10(10)Intercept = 110 Thus, the new equation is P = 110 – 10Q_D."
+  },
+  {
+    "id": "a43cc85025a4005f97d897517353487d",
+    "type": "multiple_choice",
+    "text": "&nbsp; Suppose that the supply curve for a good is represented by P = 4Q_S + 10. An improvement in technology allows suppliers to save $2 per unit in their production of the good.&nbsp;&nbsp; &nbsp;What is the inverse supply equation for the new supply curve? &nbsp;",
+    "options": [
+      {
+        "text": "P = 4Q_S + 8",
+        "correct": true
+      },
+      {
+        "text": "P = 4Q_S + 12",
+        "correct": false
+      },
+      {
+        "text": "P = 6Q_S + 12",
+        "correct": false
+      },
+      {
+        "text": "P = 6Q_S + 10",
+        "correct": false
+      },
+      {
+        "text": "P = 8Q_S + 10",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: An improvement in technology leads to an outward shift in the supply curve. Thus, the slope remains the same, but the intercept will shift 2 units downward. &nbsp;&nbsp; &nbsp;In this case, the intercept is 10, so the new supply equation is: P = 4Q_S + 8."
+  },
+  {
+    "id": "ad500c89b7cb18a38576edec103dd757",
+    "type": "short_answer",
+    "text": "An outward shift in both demand and supply moves equilibrium quantity from 4 to 7.5. What is the change in equilibrium quantity? Round to the nearest 0.5.",
+    "feedback": "Before the shifters, the quantity at equilibrium was 4 as this is where the demand and supply curves intersect. After the supply and demand shifters, the new quantity at equilibrium is 7.5. Thus, the change is 7.5 – 4 = 3.5.",
+    "correctAnswer": "3.5"
+  },
+  {
+    "id": "0709c8e8406a33f4e82ad660bf236a3e",
+    "type": "multiple_choice",
+    "text": "&nbsp; If both demand and supply curves for a given good shift outward, what can we conclude about the new equilibrium price and quantity? &nbsp;",
+    "options": [
+      {
+        "text": "Quantity decreases; price increases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price decreases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price increases",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price may or may not change",
+        "correct": true
+      },
+      {
+        "text": "We cannot make any certain conclusions about price and quantity",
+        "correct": false
+      }
+    ],
+    "feedback": "If both demand and supply shift outward, equilibrium quantity must increase. Price may rise, fall, or stay the same depending on which curve shifts more. If demand shifts more than supply, price rises; if supply shifts more than demand, price falls; if the shifts offset, price can stay roughly the same."
+  }
+]

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4: Demand &amp; Supply Shifters</title>
+  <link rel="stylesheet" href="../css/theme.css?v=3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="site-nav">
+    <a href="../index.html" class="site-nav__brand" aria-label="Harvard Kennedy School"><img class="site-nav__logo" src="../assets/images/hks-logo.svg" alt="Harvard Kennedy School"></a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <span class="sidebar__part-label">Module 4</span>
+      <a href="#introduction" class="sidebar__link sidebar__link--active">Introduction</a>
+      <a href="#demand-shifters" class="sidebar__link">Demand Shifters</a>
+      <a href="#supply-shifters" class="sidebar__link">Supply Shifters</a>
+      <a href="#four-step-process" class="sidebar__link">The Four-Step Process</a>
+      <a href="#key-terms" class="sidebar__link">Key Terms</a>
+
+      <span class="sidebar__part-label" style="margin-top: var(--space-2xl);">Learning Path</span>
+      <a href="module-01-1-demand.html" class="sidebar__link">1. Demand Basics</a>
+      <a href="module-01-2-supply.html" class="sidebar__link">2. Supply Basics</a>
+      <a href="module-01-3-equilibrium.html" class="sidebar__link">3. Equilibrium Basics</a>
+      <a href="modules-1-3-summary-quiz.html" class="sidebar__link">Practice Quiz Modules 1-3</a>
+      <a href="module-02-demand-supply-shifters.html" class="sidebar__link" style="font-weight:600; color: var(--color-primary);">4. Demand &amp; Supply Shifters</a>
+      <a href="module-04-summary-quiz.html" class="sidebar__link">Practice Quiz Module 4</a>
+      <a href="module-03-consumer-producer-surplus.html" class="sidebar__link">5. Consumer &amp; Producer Surplus</a>
+      <a href="module-05-summary-quiz.html" class="sidebar__link">Practice Quiz Module 5</a>
+      <a href="module-06-cap-price-support-system.html" class="sidebar__link">6. CAP Price Support System</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- ===== MODULE HEADER ===== -->
+      <header class="chapter-header">
+        <div class="chapter-header__number">Module 4</div>
+        <h1 class="chapter-header__title">Demand &amp; Supply Shifters</h1>
+        <p class="chapter-header__subtitle">
+          Beyond price: understanding the forces that move entire demand and supply curves and reshape market equilibria.
+        </p>
+      </header>
+
+      <!-- ===== LEARNING OBJECTIVES ===== -->
+      <div class="learning-objectives">
+        <div class="learning-objectives__title">Learning Objectives</div>
+        <ul>
+          <li>Identify the key factors that shift the demand curve</li>
+          <li>Identify the key factors that shift the supply curve</li>
+          <li>Distinguish between normal goods and inferior goods</li>
+          <li>Explain how substitute and complementary goods affect demand</li>
+          <li>Model a demand or supply shift algebraically and graphically</li>
+          <li>Apply the four-step process to analyze equilibrium changes</li>
+          <li>Predict price and quantity changes when curves shift</li>
+        </ul>
+      </div>
+
+      <!-- ===== INTRODUCTION ===== -->
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        In Modules 1-3, you learned how the law of demand and law of supply create the downward-sloping demand curve and upward-sloping supply curve, then how those curves determine equilibrium. Both relationships hold true under a critical assumption: <em>ceteris paribus</em>, or "all else equal." But in the real world, "all else" is constantly changing. Consumer tastes shift, production technologies advance, input costs rise and fall, and new competitors enter or leave markets.
+      </p>
+      <p>
+        This module extends your understanding of markets by examining what happens when those other factors change. You will learn which factors cause demand curves to shift, which cause supply curves to shift, and how these shifts propagate through markets to create new equilibria. This is the heart of economic policy analysis: understanding how interventions, shocks, or natural events reshape market outcomes.
+      </p>
+      <p>
+        As in Modules 1-3, we will keep using agricultural-market examples so the mechanics stay concrete. The CAP price support system returns in Module 6, after you have practiced the standard tools for modeling demand and supply shifters.
+      </p>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">Critical Distinction</div>
+        <p>
+          <strong>Movement along a curve:</strong> A change in the price of the good itself causes a movement along the demand or supply curve. The curve itself does not move.<br><br>
+          <strong>Shift of the curve:</strong> A change in any <em>other</em> factor (income, tastes, input costs, technology, etc.) shifts the entire curve to the left or right. This is a fundamentally different effect on the market.
+        </p>
+      </div>
+
+      <!-- ===== DEMAND SHIFTERS ===== -->
+      <h2 id="demand-shifters">Factors That Shift Demand</h2>
+
+      <p>
+        A demand curve represents the quantity consumers are willing and able to buy at each price, holding everything else constant. When any of those other factors change, the entire curve shifts — meaning at every price level, a different quantity is demanded. Understanding which factors shift demand is essential for predicting how markets respond to real-world changes.
+      </p>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Demand Shifters</div>
+        <div class="definition-box__text">
+          Factors that cause the entire demand curve to shift to a new position:
+          <ul style="margin: 0.5rem 0 0 1.5rem;">
+            <li><strong>Consumer Income:</strong> How much money households have to spend</li>
+            <li><strong>Tastes and Preferences:</strong> Consumer attitudes toward the good</li>
+            <li><strong>Prices of Substitutes:</strong> Prices of goods that can replace this good</li>
+            <li><strong>Prices of Complements:</strong> Prices of goods used together with this good</li>
+            <li><strong>Expectations:</strong> Beliefs about future prices or income</li>
+            <li><strong>Number of Buyers:</strong> Size and composition of the market</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Normal Goods vs. Inferior Goods</h3>
+      <p>
+        Not all goods respond to income changes in the same way. When consumer income rises, demand for most goods increases — these are called <strong>normal goods</strong>. Examples include restaurant meals, new cars, and vacation travel. The demand curve shifts to the right: at any price, consumers want to buy more.
+      </p>
+      <p>
+        For a few goods, the opposite happens. When income rises, demand <em>decreases</em> — these are <strong>inferior goods</strong>. Classic examples are generic-brand products, used cars, or bus rides. As people become wealthier, they buy less of these goods and switch to higher-quality alternatives. The demand curve shifts to the left.
+      </p>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Normal Good</div>
+        <div class="definition-box__text">
+          A good whose demand increases when consumer income rises and decreases when income falls.
+        </div>
+      </div>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Inferior Good</div>
+        <div class="definition-box__text">
+          A good whose demand decreases when consumer income rises and increases when income falls. This label describes a relationship between the good and income, not a judgment about the good's quality.
+        </div>
+      </div>
+
+      <h3>Substitutes and Complements</h3>
+      <p>
+        The prices of other goods in the market strongly influence demand for any particular good. Goods can be related in two key ways:
+      </p>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Substitute Goods</div>
+        <div class="definition-box__text">
+          Goods that consumers can use in place of each other. When the price of a substitute rises, demand for the original good <em>increases</em> (consumers switch to it). When the price of a substitute falls, demand for the original good <em>decreases</em> (consumers switch out of it).
+        </div>
+      </div>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Complementary Goods</div>
+        <div class="definition-box__text">
+          Goods that are typically consumed together. When the price of a complement rises, demand for the original good <em>decreases</em> (fewer people buy both). When the price of a complement falls, demand for the original good <em>increases</em> (more people buy both).
+        </div>
+      </div>
+
+      <h3>Example: Substitutes and Complements</h3>
+      <p>
+        Related goods change demand by changing how attractive the original good feels at every price. If a substitute becomes more expensive, buyers switch to the original good and its demand shifts right. If a complement becomes more expensive, so does the original good, and its demand shifts left.
+      </p>
+      <div class="shift-showcase">
+        <div class="shift-showcase__graph" id="related-demand-graph"></div>
+        <div class="shift-showcase__panel">
+          <div class="shift-showcase__title">Demand shifts from related goods</div>
+          <div class="shift-showcase__controls" aria-label="Related goods demand shift scenarios">
+            <button class="shift-showcase__btn shift-showcase__btn--active" data-related-shift="base" type="button">Baseline</button>
+            <button class="shift-showcase__btn" data-related-shift="substitute" type="button">Substitute Price Rises</button>
+            <button class="shift-showcase__btn" data-related-shift="substitute-falls" type="button">Substitute Price Falls</button>
+            <button class="shift-showcase__btn" data-related-shift="complement" type="button">Complement Price Rises</button>
+            <button class="shift-showcase__btn" data-related-shift="complement-falls" type="button">Complement Price Falls</button>
+          </div>
+          <p class="shift-showcase__readout" id="related-demand-readout">
+            Start with the original demand curve. Use the buttons to compare how substitute and complement price changes can shift demand right or left.
+          </p>
+        </div>
+        <p class="shift-figure__caption">Figure 4.1: Related goods can shift demand right or left.</p>
+      </div>
+
+      <div class="self-check">
+        <div class="self-check__question">
+          Suppose consumers in the EU increasingly switch from sugar to artificial sweeteners. What happens to the demand curve for sugar?
+        </div>
+        <button class="self-check__reveal-btn">Show Answer</button>
+        <div class="self-check__answer">
+          The demand curve for sugar shifts to the left. This is a change in tastes and preferences, not a change in sugar's own price. At every price, consumers now want less sugar than before — a true demand shift, not a movement along the existing demand curve.
+        </div>
+      </div>
+
+      <div class="check-understanding"
+           data-question="When the price of coffee rises sharply, what happens to the demand for tea (a substitute)?"
+           data-correct="1"
+           data-explanation="Tea is a substitute for coffee. When coffee becomes more expensive, consumers switch to tea. At every price level, more tea is now demanded — the demand curve for tea shifts right (increases).">
+        <div class="check-understanding__option" data-index="0">The demand curve for tea shifts left</div>
+        <div class="check-understanding__option" data-index="1">The demand curve for tea shifts right</div>
+        <div class="check-understanding__option" data-index="2">There is a movement along the tea demand curve</div>
+        <div class="check-understanding__option" data-index="3">The supply of tea shifts right</div>
+      </div>
+
+      <!-- ===== SUPPLY SHIFTERS ===== -->
+      <h2 id="supply-shifters">Factors That Shift Supply</h2>
+
+      <p>
+        Just as demand curves shift when underlying conditions change, so do supply curves. A supply curve shows the quantity firms are willing to produce and sell at each price. When the cost or feasibility of production changes, the entire curve shifts. Producers will offer more of a good if it becomes cheaper or easier to make, and less if it becomes more expensive or difficult.
+      </p>
+
+      <div class="definition-box">
+        <div class="definition-box__term">Supply Shifters</div>
+        <div class="definition-box__text">
+          Factors that cause the entire supply curve to shift to a new position:
+          <ul style="margin: 0.5rem 0 0 1.5rem;">
+            <li><strong>Input Prices:</strong> Costs of labor, materials, energy, and other production factors</li>
+            <li><strong>Technology:</strong> Methods and efficiency of production</li>
+            <li><strong>Natural Conditions:</strong> Weather, natural disasters, or resource availability</li>
+            <li><strong>Producer Expectations:</strong> Beliefs about future prices or conditions</li>
+            <li><strong>Number of Sellers:</strong> How many firms are in the market</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>How Changes in Production Costs Affect Supply</h3>
+      <p>
+        Firms make production decisions based on profit — the difference between revenue and costs. When production costs fall, firms can produce the same quantity at lower cost, making previously unprofitable production economically viable. Supply increases and the supply curve shifts right. When production costs rise, supply decreases and the supply curve shifts left.
+      </p>
+
+      <h3>Technology and Productivity</h3>
+      <p>
+        When firms discover new production methods or technologies that reduce costs, supply increases dramatically. A classic example is the Green Revolution of the 1960s and 1970s, when improved seeds for wheat and rice doubled crop yields in low-income countries. Supply curves for these crops shifted right, and more food became available at every price level.
+      </p>
+
+      <h3>Illustrating Supply Shifts</h3>
+      <p>
+        Two common supply shifters move the supply curve in opposite directions. Bad weather makes production harder and shifts supply left. Better technology makes production easier and shifts supply right.
+      </p>
+      <div class="shift-figure-grid">
+        <div class="shift-figure">
+          <div class="shift-figure__graph" id="supply-decrease-graph"></div>
+          <p class="shift-figure__caption">Figure 4.2: Drought or bad weather shifts supply left.</p>
+        </div>
+        <div class="shift-figure">
+          <div class="shift-figure__graph" id="supply-increase-graph"></div>
+          <p class="shift-figure__caption">Figure 4.3: Better technology shifts supply right.</p>
+        </div>
+      </div>
+
+      <div class="self-check">
+        <div class="self-check__question">
+          Exceptionally hot weather and very little rainfall reduce agricultural yields. What happens to the supply curve for sugar?
+        </div>
+        <button class="self-check__reveal-btn">Show Answer</button>
+        <div class="self-check__answer">
+          The supply curve for sugar shifts to the left (decreases). Poor weather makes production more difficult and reduces output at every price. This is a negative supply shock — different from a movement along the supply curve, which would occur only if sugar's own price changed.
+        </div>
+      </div>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">Important Principle</div>
+        <p>
+          <strong>A shift in one curve never causes a shift in the other curve.</strong> Instead, a shift in one curve causes a <em>movement along</em> the other curve. For example, if supply decreases (curve shifts left), the equilibrium price rises, causing a movement up and to the left along the demand curve. But the demand curve itself does not shift.
+        </p>
+      </div>
+
+      <div class="shift-showcase">
+        <div class="shift-showcase__graph" id="movement-principle-graph"></div>
+        <div class="shift-showcase__panel">
+          <div class="shift-showcase__title">Shift vs. Movement Along</div>
+          <div class="shift-showcase__controls" aria-label="Shift and movement scenarios">
+            <button class="shift-showcase__btn shift-showcase__btn--active" data-movement-case="supply" type="button">Supply Shifter</button>
+            <button class="shift-showcase__btn" data-movement-case="demand" type="button">Demand Shifter</button>
+          </div>
+          <p class="shift-showcase__readout" id="movement-principle-readout">
+            A supply shifter moves the supply curve and causes a movement along the demand curve.
+          </p>
+        </div>
+        <p class="shift-figure__caption">Figure 4.4: A curve shift changes equilibrium and causes movement along the other curve.</p>
+      </div>
+
+      <!-- ===== FOUR-STEP PROCESS ===== -->
+      <h2 id="four-step-process">The Four-Step Process for Equilibrium Analysis</h2>
+
+      <p>
+        When an economic event affects demand or supply, use this systematic four-step process to predict the new equilibrium price and quantity. It works for any market and any type of change.
+      </p>
+
+      <p>
+        The example below uses a drought in the wheat market. The same process works for any demand or supply shock.
+      </p>
+
+      <div class="process-graph-grid">
+        <section class="process-graph-step">
+          <div class="process-graph-step__label">Step 1</div>
+          <h3 class="process-graph-step__title">Draw the Initial Equilibrium</h3>
+          <div class="process-graph-step__graph" id="four-step-graph-1"></div>
+          <p>Figure 4.5a: Start with the original demand and supply curves. Mark the first intersection as \((Q^*, P^*)\), with baseline price \(P^*\) and quantity \(Q^*\).</p>
+        </section>
+
+        <section class="process-graph-step">
+          <div class="process-graph-step__label">Step 2</div>
+          <h3 class="process-graph-step__title">Identify What Changed</h3>
+          <div class="process-graph-step__graph" id="four-step-graph-2"></div>
+          <p>Figure 4.5b: A drought affects production conditions, not buyers' willingness to buy. That means the supply curve is the curve that changes.</p>
+        </section>
+
+        <section class="process-graph-step">
+          <div class="process-graph-step__label">Step 3</div>
+          <h3 class="process-graph-step__title">Determine the Direction of Shift</h3>
+          <div class="process-graph-step__graph" id="four-step-graph-3"></div>
+          <p>Figure 4.5c: Because the drought makes production harder, supply decreases. The supply curve shifts left: at every price, sellers provide less wheat.</p>
+        </section>
+
+        <section class="process-graph-step">
+          <div class="process-graph-step__label">Step 4</div>
+          <h3 class="process-graph-step__title">Find and Compare the New Equilibrium</h3>
+          <div class="process-graph-step__graph" id="four-step-graph-4"></div>
+          <p>Figure 4.5d: The new intersection is \((Q', P')\). Price rises and quantity falls. The demand curve did not shift; buyers move along demand in response to the higher price.</p>
+        </section>
+      </div>
+
+      <div class="shift-showcase">
+        <div class="shift-showcase__graph" id="four-step-interactive-graph"></div>
+        <div class="shift-showcase__panel">
+          <h3 class="shift-showcase__title">Practice with Two Examples</h3>
+          <div class="shift-showcase__controls" aria-label="Four-step practice scenarios">
+            <button class="shift-showcase__btn shift-showcase__btn--active" data-four-step-case="supply" type="button">Ex. 1: Drought Reduces Harvest</button>
+            <button class="shift-showcase__btn" data-four-step-case="demand" type="button">Ex. 2: Consumer Income Rises</button>
+          </div>
+          <div class="four-step-practice" aria-label="Four-step practice choices">
+            <div class="four-step-practice__group">
+              <div class="four-step-practice__label">1. Which curve shifts?</div>
+              <div class="four-step-practice__choices">
+                <button class="shift-showcase__btn" data-four-step-choice="curve" data-value="demand" type="button">Demand</button>
+                <button class="shift-showcase__btn" data-four-step-choice="curve" data-value="supply" type="button">Supply</button>
+              </div>
+            </div>
+            <div class="four-step-practice__group">
+              <div class="four-step-practice__label">2. Which direction?</div>
+              <div class="four-step-practice__choices">
+                <button class="shift-showcase__btn" data-four-step-choice="direction" data-value="left" type="button">Left</button>
+                <button class="shift-showcase__btn" data-four-step-choice="direction" data-value="right" type="button">Right</button>
+              </div>
+            </div>
+            <div class="four-step-practice__group">
+              <div class="four-step-practice__label">3. What happens to price?</div>
+              <div class="four-step-practice__choices">
+                <button class="shift-showcase__btn" data-four-step-choice="price" data-value="falls" type="button">Falls</button>
+                <button class="shift-showcase__btn" data-four-step-choice="price" data-value="rises" type="button">Rises</button>
+              </div>
+            </div>
+            <div class="four-step-practice__group">
+              <div class="four-step-practice__label">4. What happens to quantity?</div>
+              <div class="four-step-practice__choices">
+                <button class="shift-showcase__btn" data-four-step-choice="quantity" data-value="falls" type="button">Falls</button>
+                <button class="shift-showcase__btn" data-four-step-choice="quantity" data-value="rises" type="button">Rises</button>
+              </div>
+            </div>
+            <div class="four-step-practice__actions">
+              <button class="graphing-method__next-btn" id="four-step-check" type="button">Check Work</button>
+              <button class="shift-showcase__btn" id="four-step-reset" type="button">Reset</button>
+            </div>
+          </div>
+          <p class="shift-showcase__readout" id="four-step-interactive-readout">
+            Choose the affected curve first. Your curve and direction choices will update the graph before you check your work.
+          </p>
+        </div>
+        <p class="shift-figure__caption">Figure 4.6: Use the four-step process for both supply and demand shifters.</p>
+      </div>
+
+      <div class="check-understanding"
+           data-question="A drought destroys a large portion of the wheat harvest. Using the four-step process, which curve shifts, why does it shift that way, and what happens to the equilibrium price and quantity of wheat?"
+           data-correct="2"
+           data-explanation="A drought reduces the ability to produce wheat — this is a supply shifter (natural conditions). Supply decreases, shifting the supply curve left. With the same demand, a leftward supply shift raises equilibrium price and reduces equilibrium quantity.">
+        <div class="check-understanding__option" data-index="0">Demand shifts left because buyers want less wheat; price falls and quantity falls.</div>
+        <div class="check-understanding__option" data-index="1">Supply shifts right because producers bring more wheat to market; price falls and quantity rises.</div>
+        <div class="check-understanding__option" data-index="2">Supply shifts left because drought makes wheat harder to produce; price rises and quantity falls.</div>
+        <div class="check-understanding__option" data-index="3">Demand shifts right because wheat becomes scarce; price rises and quantity rises.</div>
+      </div>
+
+      <section id="key-terms" data-glossary-through="4" data-current-module="4"></section>
+
+      <!-- ===== SUMMARY ===== -->
+      <h2>Summary</h2>
+      <p>
+        Module 4 expanded your toolkit for understanding markets. Price is not the only factor affecting markets; changes in income, tastes, technology, input costs, and expectations drive shifts in demand and/or supply. The critical distinction is between movements along curves (caused by price changes) and shifts of curves (caused by other factors).
+      </p>
+      <p>
+        You also practiced the four-step process: identify the event, decide which curve shifts, determine the direction of the shift, and compare the new equilibrium to the old one. Module 6 will use these same tools to analyze the CAP price support system as a policy-driven market intervention.
+      </p>
+
+      <!-- ===== NAVIGATION ===== -->
+      <nav class="chapter-nav">
+        <a href="modules-1-3-summary-quiz.html" class="chapter-nav__link chapter-nav__link--prev">
+          <span class="chapter-nav__direction">&larr; Previous</span>
+          <span class="chapter-nav__title">Practice Quiz Modules 1-3</span>
+        </a>
+        <a href="module-04-summary-quiz.html" class="chapter-nav__link chapter-nav__link--next">
+          <span class="chapter-nav__direction">Next &rarr;</span>
+          <span class="chapter-nav__title">Practice Quiz Module 4</span>
+        </a>
+      </nav>
+
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/textbook.js"></script>
+  <script>
+    /* ============================================================
+       Module 4: Demand and Supply Shifters
+       ============================================================ */
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+      /* ---------- KaTeX ---------- */
+      if (typeof renderMathInElement !== 'undefined') {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '\\(', right: '\\)', display: false }
+          ]
+        });
+      }
+
+      /* ---------- helpers ---------- */
+      function addEqGuides(graph, q, p, color) {
+        color = color || '#1a5276';
+        // className: 'dynamic' ensures these are cleared by graph.clear()
+        graph.addDashedLine([{ x: q, y: p }, { x: q, y: 0 }], color, { strokeWidth: 1.2, className: 'dynamic' });
+        graph.addDashedLine([{ x: q, y: p }, { x: 0, y: p }], color, { strokeWidth: 1.2, className: 'dynamic' });
+      }
+
+      /* =============================================================
+         MINI ILLUSTRATION GRAPHS
+         Original curve: solid.  Shifted curve: dashed.
+         Arrow labels show the direction of the shift.
+         ============================================================= */
+
+      function animateShiftCurve(graph, curve, color, opts) {
+        opts = opts || {};
+        var data = curve;
+        if (opts.includeX && opts.includeX.length) {
+          var xMin = graph.config.xDomain[0];
+          var xMax = graph.config.xDomain[1];
+          var step = (xMax - xMin) / 200;
+          var xs = [];
+          for (var x = xMin; x <= xMax; x += step) xs.push(x);
+          opts.includeX.forEach(function(x) {
+            if (x >= xMin && x <= xMax) xs.push(x);
+          });
+          xs = Array.from(new Set(xs.map(function(x) { return Number(x.toFixed(6)); }))).sort(function(a, b) { return a - b; });
+          data = xs.map(function(x) {
+            return { x: x, y: curve(x) };
+          }).filter(function(point) {
+            return isFinite(point.y);
+          });
+        }
+        var path = graph.addLine(data, color, opts);
+        try {
+          var length = path.node().getTotalLength();
+          path
+            .attr('stroke-dasharray', length + ' ' + length)
+            .attr('stroke-dashoffset', length)
+            .transition()
+            .duration(opts.duration || 1600)
+            .ease(d3.easeCubicOut)
+            .attr('stroke-dashoffset', 0)
+            .on('end', function() {
+              d3.select(this).attr('stroke-dasharray', opts.dashed ? '8,4' : null);
+            });
+        } catch(e) {}
+        return path;
+      }
+
+      function addShiftArrow(graph, x1, y1, x2, y2, color, label, labelX, labelY) {
+        var labelGroup = graph.addLabel(labelX, labelY, label, {
+          color: color,
+          fontSize: '14px',
+          fontWeight: '800',
+          anchor: 'middle',
+          className: 'dynamic'
+        });
+        labelGroup.attr('opacity', 0)
+          .transition()
+          .delay(900)
+          .duration(300)
+          .attr('opacity', 1);
+      }
+
+      /* -- Related goods: substitutes and complements shift demand -- */
+      (function() {
+        var graph = EconGraph.create('#related-demand-graph', {
+          xLabel: 'Quantity',
+          yLabel: 'Price',
+          xDomain: [0, 90],
+          yDomain: [0, 8]
+        });
+        if (!graph) return;
+
+        var readout = document.getElementById('related-demand-readout');
+        var baseD = function(x) { return 6 - x / 15; };
+        var rightD = function(x) { return 7.4 - x / 15; };
+        var leftD = function(x) { return 4.6 - x / 15; };
+
+        function setActive(mode) {
+          document.querySelectorAll('[data-related-shift]').forEach(function(btn) {
+            btn.classList.toggle('shift-showcase__btn--active', btn.dataset.relatedShift === mode);
+          });
+        }
+
+        function draw(mode) {
+          graph.clear();
+          setActive(mode);
+
+          if (mode === 'base') {
+            graph.addLine(baseD, '#2e86c1', { label: 'D', strokeWidth: 2.75 });
+            graph.addLabel(38, 3.1, 'Original demand', { color: '#2e86c1', fontSize: '11px', fontWeight: '700', anchor: 'middle' });
+            if (readout) {
+              readout.textContent = 'Baseline: the curve shows demand for the original good before the price of a related good changes.';
+            }
+            return;
+          }
+
+          graph.addLine(baseD, '#8aa9bf', { label: 'D', strokeWidth: 1.6, dashed: true });
+
+          if (mode === 'substitute') {
+            animateShiftCurve(graph, rightD, '#2e86c1', { label: "D'", strokeWidth: 2.75 });
+            addShiftArrow(graph, 33, 3.8, 48, 3.8, '#2e86c1', '\u2192 Demand shifts right', 49, 4.45);
+            if (readout) {
+              readout.innerHTML = '<strong>Substitute price rises:</strong> buyers switch to the original good. At every price, they now want more, so demand shifts right.';
+            }
+          } else if (mode === 'substitute-falls') {
+            animateShiftCurve(graph, leftD, '#2e86c1', { label: "D'", strokeWidth: 2.75 });
+            addShiftArrow(graph, 44, 3, 29, 3, '#2e86c1', '\u2190 Demand shifts left', 30, 3.65);
+            if (readout) {
+              readout.innerHTML = '<strong>Substitute price falls:</strong> buyers switch away from the original good toward the cheaper substitute, so demand shifts left.';
+            }
+          } else if (mode === 'complement') {
+            animateShiftCurve(graph, leftD, '#2e86c1', { label: "D'", strokeWidth: 2.75 });
+            addShiftArrow(graph, 44, 3, 29, 3, '#2e86c1', '\u2190 Demand shifts left', 30, 3.65);
+            if (readout) {
+              readout.innerHTML = '<strong>Complement price rises:</strong> the pair becomes more expensive. At every price, buyers want less of the original good, so demand shifts left.';
+            }
+          } else if (mode === 'complement-falls') {
+            animateShiftCurve(graph, rightD, '#2e86c1', { label: "D'", strokeWidth: 2.75 });
+            addShiftArrow(graph, 33, 3.8, 48, 3.8, '#2e86c1', '\u2192 Demand shifts right', 49, 4.45);
+            if (readout) {
+              readout.innerHTML = '<strong>Complement price falls:</strong> the pair becomes less expensive. At every price, buyers want more of the original good, so demand shifts right.';
+            }
+          }
+        }
+
+        document.querySelectorAll('[data-related-shift]').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            draw(btn.dataset.relatedShift);
+          });
+        });
+
+        draw('base');
+      })();
+
+      /* -- Supply decrease: drought → supply shifts LEFT -- */
+      (function() {
+        var g = EconGraph.create('#supply-decrease-graph', {
+          xLabel: 'Quantity of Wheat', yLabel: 'Price',
+          xDomain: [0, 80], yDomain: [0, 6]
+        });
+        if (!g) return;
+        // S:  P = Q/20  |  S': P = (Q+15)/20  (leftward shift of 15)
+        var S  = function(x) { return x / 20; };
+        var Sp = function(x) { return (x + 15) / 20; };
+        g.addLine(S,  '#145a32', { label: 'S',  strokeWidth: 2.5 });
+        animateShiftCurve(g, Sp, '#145a32', { label: "S'", strokeWidth: 2.5, dashed: true });
+        addShiftArrow(g, 42, 2.85, 27, 2.85, '#145a32', '\u2190 shift left', 28, 3.55);
+      })();
+
+      /* -- Supply increase: technology → supply shifts RIGHT -- */
+      (function() {
+        var g = EconGraph.create('#supply-increase-graph', {
+          xLabel: 'Quantity of Wheat', yLabel: 'Price',
+          xDomain: [0, 80], yDomain: [0, 6]
+        });
+        if (!g) return;
+        // S:  P = Q/20  |  S': P = (Q-15)/20  (rightward shift of 15)
+        var S  = function(x) { return x / 20; };
+        var Sp = function(x) { return (x - 15) / 20; };
+        g.addLine(S,  '#145a32', { label: 'S',  strokeWidth: 2.5 });
+        animateShiftCurve(g, Sp, '#145a32', { label: "S'", strokeWidth: 2.5, dashed: true });
+        addShiftArrow(g, 36, 2.15, 51, 2.15, '#145a32', 'shift right \u2192', 50, 2.85);
+      })();
+
+      /* -- Important principle: a shift causes movement along the other curve -- */
+      (function() {
+        var graph = EconGraph.create('#movement-principle-graph', {
+          xLabel: 'Quantity',
+          yLabel: 'Price',
+          xDomain: [0, 80],
+          yDomain: [0, 7]
+        });
+        if (!graph) return;
+        var readout = document.getElementById('movement-principle-readout');
+        var D = function(x) { return 6 - x / 15; };
+        var S = function(x) { return x / 12; };
+        var SLeft = function(x) { return (x + 18) / 12; };
+        var DRight = function(x) { return 7.2 - x / 15; };
+
+        function setActive(mode) {
+          document.querySelectorAll('[data-movement-case]').forEach(function(btn) {
+            btn.classList.toggle('shift-showcase__btn--active', btn.dataset.movementCase === mode);
+          });
+        }
+
+        function draw(mode) {
+          graph.clear();
+          setActive(mode);
+          graph.addLine(D, '#2e86c1', { label: 'D', strokeWidth: 2.5 });
+          graph.addLine(S, '#145a32', { label: 'S', strokeWidth: 2.5 });
+          graph.addPoint(40, 10 / 3, { color: '#8a8f94', radius: 4, label: '(Q*, P*)' });
+
+          if (mode === 'supply') {
+            animateShiftCurve(graph, SLeft, '#145a32', { label: "S'", strokeWidth: 2.75, dashed: true, includeX: [30] });
+            graph.addPoint(30, 4, { color: '#1a5276', radius: 6, label: "(Q\u2032, P\u2032)" });
+            addEqGuides(graph, 30, 4, '#1a5276');
+            addShiftArrow(graph, 45, 4.35, 31, 4.35, '#145a32', 'S shifts left', 31, 5.05);
+            graph.addDashedLine([{ x: 40, y: 10 / 3 }, { x: 30, y: 4 }], '#2e86c1', { strokeWidth: 2, className: 'dynamic' });
+            graph.addLabel(45, 3.75, 'movement along D', { color: '#2e86c1', fontSize: '13px', fontWeight: '800', anchor: 'middle', className: 'dynamic' });
+            if (readout) readout.innerHTML = '<strong>Supply shifter:</strong> drought shifts supply left. Demand does not shift; buyers move along the demand curve to the new higher price.';
+          } else {
+            animateShiftCurve(graph, DRight, '#2e86c1', { label: "D'", strokeWidth: 2.75, dashed: true, includeX: [48] });
+            graph.addPoint(48, 4, { color: '#1a5276', radius: 6, label: "(Q\u2032, P\u2032)" });
+            addEqGuides(graph, 48, 4, '#1a5276');
+            addShiftArrow(graph, 30, 4.15, 45, 4.15, '#2e86c1', 'D shifts right', 45, 4.85);
+            graph.addDashedLine([{ x: 40, y: 10 / 3 }, { x: 48, y: 4 }], '#145a32', { strokeWidth: 2, className: 'dynamic' });
+            graph.addLabel(55, 3.7, 'movement along S', { color: '#145a32', fontSize: '13px', fontWeight: '800', anchor: 'middle', className: 'dynamic' });
+            if (readout) readout.innerHTML = '<strong>Demand shifter:</strong> higher income shifts demand right. Supply does not shift; sellers move along the supply curve to the new higher price.';
+          }
+        }
+
+        document.querySelectorAll('[data-movement-case]').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            draw(btn.dataset.movementCase);
+          });
+        });
+        draw('supply');
+      })();
+
+      /* -- Four-step process: drought supply shock -- */
+      (function() {
+        var demand = function(x) { return 6 - x / 15; };
+        var supply = function(x) { return x / 12; };
+        var supplyLeft = function(x) { return (x + 18) / 12; };
+        var originalQ = 40;
+        var originalP = 10 / 3;
+        var newQ = 30;
+        var newP = 4;
+
+        function createStepGraph(selector) {
+          return EconGraph.create(selector, {
+            xLabel: 'Quantity',
+            yLabel: 'Price',
+            xDomain: [0, 75],
+            yDomain: [0, 7],
+            height: 340
+          });
+        }
+
+        function drawOriginal(graph, faded) {
+          graph.addLine(demand, faded ? '#8aa9bf' : '#2e86c1', { label: 'D', strokeWidth: faded ? 1.6 : 2.5, dashed: faded });
+          graph.addLine(supply, faded ? '#9fc5aa' : '#145a32', { label: 'S', strokeWidth: faded ? 1.6 : 2.5, dashed: faded });
+          graph.addPoint(originalQ, originalP, { color: faded ? '#8a8f94' : '#1a5276', radius: faded ? 4 : 6, label: '(Q*, P*)' });
+          addEqGuides(graph, originalQ, originalP, faded ? '#8a8f94' : '#1a5276');
+        }
+
+        var g1 = createStepGraph('#four-step-graph-1');
+        if (g1) {
+          drawOriginal(g1, false);
+          g1.addLabel(19, 5.2, 'Baseline market', { color: '#1a5276', fontSize: '11px', fontWeight: '700', anchor: 'middle' });
+        }
+
+        var g2 = createStepGraph('#four-step-graph-2');
+        if (g2) {
+          drawOriginal(g2, false);
+          g2.addLabel(54, 4.45, 'Drought affects supply', { color: '#145a32', fontSize: '11px', fontWeight: '700', anchor: 'middle' });
+        }
+
+        var g3 = createStepGraph('#four-step-graph-3');
+        if (g3) {
+          g3.addLine(demand, '#2e86c1', { label: 'D', strokeWidth: 2.5 });
+          g3.addLine(supply, '#9fc5aa', { label: 'S', strokeWidth: 1.6, dashed: true });
+          animateShiftCurve(g3, supplyLeft, '#145a32', { label: "S'", strokeWidth: 2.5, includeX: [30] });
+          addShiftArrow(g3, 43, 3.9, 29, 3.9, '#145a32', 'Supply shifts left', 30, 4.6);
+        }
+
+        var g4 = createStepGraph('#four-step-graph-4');
+        if (g4) {
+          g4.addLine(demand, '#2e86c1', { label: 'D', strokeWidth: 2.5 });
+          g4.addLine(supply, '#9fc5aa', { label: 'S', strokeWidth: 1.6, dashed: true });
+          animateShiftCurve(g4, supplyLeft, '#145a32', { label: "S'", strokeWidth: 2.5, includeX: [30] });
+          g4.addPoint(originalQ, originalP, { color: '#8a8f94', radius: 4, label: '(Q*, P*)' });
+          g4.addPoint(newQ, newP, { color: '#1a5276', radius: 6, label: "(Q\u2032, P\u2032)" });
+          addEqGuides(g4, newQ, newP, '#1a5276');
+          g4.addLabel(15, 4.18, 'Price rises', { color: '#1a5276', fontSize: '11px', fontWeight: '700', anchor: 'middle' });
+          g4.addLabel(28, 1.35, 'Quantity falls', { color: '#1a5276', fontSize: '11px', fontWeight: '700', anchor: 'middle' });
+        }
+      })();
+
+      /* -- Four-step interactive practice -- */
+      (function() {
+        var graph = EconGraph.create('#four-step-interactive-graph', {
+          xLabel: 'Quantity',
+          yLabel: 'Price',
+          xDomain: [0, 80],
+          yDomain: [0, 7]
+        });
+        if (!graph) return;
+        var readout = document.getElementById('four-step-interactive-readout');
+        var D = function(x) { return 6 - x / 15; };
+        var S = function(x) { return x / 12; };
+        var SLeft = function(x) { return (x + 18) / 12; };
+        var SRight = function(x) { return (x - 18) / 12; };
+        var DLeft = function(x) { return 4.8 - x / 15; };
+        var DRight = function(x) { return 7.2 - x / 15; };
+        var currentMode = 'supply';
+        var checked = false;
+        var response = {
+          curve: null,
+          direction: null,
+          price: null,
+          quantity: null
+        };
+
+        var answerKey = {
+          supply: {
+            curve: 'supply',
+            direction: 'left',
+            price: 'rises',
+            quantity: 'falls',
+            newQ: 30,
+            newP: 4,
+            explanation: 'Drought reduces production, so supply shifts left. The new equilibrium has a higher price and a lower quantity.'
+          },
+          demand: {
+            curve: 'demand',
+            direction: 'right',
+            price: 'rises',
+            quantity: 'rises',
+            newQ: 48,
+            newP: 4,
+            explanation: 'Higher income increases demand for this normal good, so demand shifts right. The new equilibrium has a higher price and a higher quantity.'
+          }
+        };
+
+        function setActive() {
+          document.querySelectorAll('[data-four-step-case]').forEach(function(btn) {
+            btn.classList.toggle('shift-showcase__btn--active', btn.dataset.fourStepCase === currentMode);
+          });
+          document.querySelectorAll('[data-four-step-choice]').forEach(function(btn) {
+            var field = btn.dataset.fourStepChoice;
+            btn.classList.toggle('shift-showcase__btn--active', response[field] === btn.dataset.value);
+          });
+        }
+
+        function selectedShiftCurve() {
+          if (response.curve === 'supply' && response.direction === 'left') return SLeft;
+          if (response.curve === 'supply' && response.direction === 'right') return SRight;
+          if (response.curve === 'demand' && response.direction === 'left') return DLeft;
+          if (response.curve === 'demand' && response.direction === 'right') return DRight;
+          return null;
+        }
+
+        function selectedShiftColor() {
+          return response.curve === 'demand' ? '#2e86c1' : '#145a32';
+        }
+
+        function updateReadout(message, className) {
+          if (!readout) return;
+          readout.classList.remove('four-step-practice__feedback--correct', 'four-step-practice__feedback--incorrect', 'four-step-practice__feedback--hint');
+          if (className) readout.classList.add(className);
+          readout.innerHTML = message;
+        }
+
+        function resetResponse() {
+          response.curve = null;
+          response.direction = null;
+          response.price = null;
+          response.quantity = null;
+          checked = false;
+        }
+
+        function draw(showSolution, animateShift) {
+          graph.clear();
+          setActive();
+
+          var key = answerKey[currentMode];
+          var shiftCurve = selectedShiftCurve();
+          var shiftColor = selectedShiftColor();
+          var shiftLabel = response.curve === 'demand' ? "D'" : "S'";
+          var directionLabel = response.direction === 'left' ? '\u2190 selected shift' : 'selected shift \u2192';
+          var directionLabelX = response.direction === 'left' ? 31 : 49;
+          var directionLabelY = response.curve === 'demand' ? 4.85 : 4.95;
+
+          graph.addLine(D, '#2e86c1', { label: 'D', strokeWidth: response.curve === 'demand' ? 1.6 : 2.5, dashed: response.curve === 'demand' });
+          graph.addLine(S, '#145a32', { label: 'S', strokeWidth: response.curve === 'supply' ? 1.6 : 2.5, dashed: response.curve === 'supply' });
+          graph.addPoint(40, 10 / 3, { color: showSolution ? '#8a8f94' : '#1a5276', radius: showSolution ? 4 : 6, label: '(Q*, P*)' });
+          addEqGuides(graph, 40, 10 / 3, showSolution ? '#8a8f94' : '#1a5276');
+
+          if (shiftCurve) {
+            if (animateShift === false) {
+              graph.addLine(shiftCurve, shiftColor, { label: shiftLabel, strokeWidth: 2.75 });
+            } else {
+              animateShiftCurve(graph, shiftCurve, shiftColor, { label: shiftLabel, strokeWidth: 2.75, includeX: [key.newQ] });
+            }
+            addShiftArrow(graph, response.direction === 'left' ? 45 : 30, 4.2, response.direction === 'left' ? 30 : 45, 4.2, shiftColor, directionLabel, directionLabelX, directionLabelY);
+          } else if (response.curve) {
+            graph.addLabel(40, 1.1, 'Now choose the shift direction', { color: '#1a5276', fontSize: '13px', fontWeight: '800', anchor: 'middle', className: 'dynamic' });
+          } else {
+            graph.addLabel(40, 1.1, 'Choose the curve that shifts', { color: '#1a5276', fontSize: '13px', fontWeight: '800', anchor: 'middle', className: 'dynamic' });
+          }
+
+          if (showSolution) {
+            if (!shiftCurve || response.curve !== key.curve || response.direction !== key.direction) {
+              var correctCurve = key.curve === 'supply' ? SLeft : DRight;
+              var correctColor = key.curve === 'supply' ? '#145a32' : '#2e86c1';
+              graph.addLine(correctCurve, correctColor, { label: key.curve === 'supply' ? "S'" : "D'", strokeWidth: 2.75 });
+            }
+            graph.addPoint(key.newQ, key.newP, { color: '#1a5276', radius: 6, label: "(Q\u2032, P\u2032)" });
+            addEqGuides(graph, key.newQ, key.newP, '#1a5276');
+            graph.addLabel(key.newQ, 1.2, 'P ' + key.price + ', Q ' + key.quantity, {
+              color: '#1a5276',
+              fontSize: '13px',
+              fontWeight: '800',
+              anchor: 'middle',
+              className: 'dynamic'
+            });
+          }
+        }
+
+        function checkWork() {
+          var key = answerKey[currentMode];
+          var missing = Object.keys(response).filter(function(field) { return !response[field]; });
+          checked = true;
+
+          if (missing.length) {
+            setActive();
+            updateReadout('<strong>Keep going:</strong> Make a choice for each step before checking the graph.', 'four-step-practice__feedback--hint');
+            return;
+          }
+
+          var wrong = Object.keys(key).filter(function(field) {
+            return ['curve', 'direction', 'price', 'quantity'].indexOf(field) !== -1 && response[field] !== key[field];
+          });
+
+          if (!wrong.length) {
+            draw(true, false);
+            updateReadout('<strong>Correct.</strong> ' + key.explanation + ' (Q\u2032, P\u2032) is (' + key.newQ + ', ' + key.newP + '), compared with (Q*, P*) = (40, 3.33).', 'four-step-practice__feedback--correct');
+            return;
+          }
+
+          if (wrong.indexOf('curve') !== -1 || wrong.indexOf('direction') !== -1) {
+            draw(false, false);
+          } else {
+            setActive();
+          }
+          updateReadout('<strong>Revise your graph.</strong> Check the step marked by your graph choice first: does the event change buyers or producers, and does it increase or decrease the amount offered at each price?', 'four-step-practice__feedback--incorrect');
+        }
+
+        document.querySelectorAll('[data-four-step-case]').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            currentMode = btn.dataset.fourStepCase;
+            resetResponse();
+            updateReadout('Choose the affected curve first. Your curve and direction choices will update the graph before you check your work.');
+            draw(false);
+          });
+        });
+        document.querySelectorAll('[data-four-step-choice]').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var field = btn.dataset.fourStepChoice;
+            response[field] = btn.dataset.value;
+            checked = false;
+            updateReadout('Build the graph from your choices, then check whether the new equilibrium moves the way you predicted.');
+            if (field === 'curve' || field === 'direction') {
+              draw(false, true);
+            } else {
+              setActive();
+            }
+          });
+        });
+        var checkBtn = document.getElementById('four-step-check');
+        if (checkBtn) checkBtn.addEventListener('click', checkWork);
+        var resetBtn = document.getElementById('four-step-reset');
+        if (resetBtn) resetBtn.addEventListener('click', function() {
+          resetResponse();
+          updateReadout('Choose the affected curve first. Your curve and direction choices will update the graph before you check your work.');
+          draw(false);
+        });
+        draw(false, true);
+      })();
+
+      /* =============================================================
+         PRACTICE QUIZ
+         ============================================================= */
+      (function() {
+        var questions = [
+          {
+            id: 'q1', type: 'multiple_choice',
+            text: 'China attracts a lot of new foreign investors, who tend to travel around the country frequently and who put a premium on transportation speed. What shift occurs in the market for airline service between Beijing and Shanghai?',
+            options: [
+              { text: 'Demand curve shifts in.', correct: false },
+              { text: 'Demand curve shifts out.', correct: true },
+              { text: 'Supply curve shifts in.', correct: false },
+              { text: 'Supply curve shifts out.', correct: false },
+              { text: 'No shift.', correct: false }
+            ],
+            feedback: 'Correct. New foreign investors increase the number of buyers willing to pay for fast transportation. This is a demand shifter (number of buyers). The demand curve shifts out.'
+          },
+          {
+            id: 'q2', type: 'multiple_choice',
+            text: 'The quality of a no-toll highway connecting Beijing and Shanghai deteriorates significantly. What shift occurs in the market for airline service?',
+            options: [
+              { text: 'Demand curve shifts in.', correct: false },
+              { text: 'Demand curve shifts out.', correct: true },
+              { text: 'Supply curve shifts in.', correct: false },
+              { text: 'Supply curve shifts out.', correct: false },
+              { text: 'No shift.', correct: false }
+            ],
+            feedback: 'Correct. When a substitute (highway transport) becomes less attractive, demand for the original good (airline service) increases. The demand curve shifts out. Note: quality deterioration works similarly to a price increase — it raises the effective cost of using the substitute, causing consumers to switch toward the alternative.'
+          },
+          {
+            id: 'q3', type: 'multiple_choice',
+            text: 'The price of airplane fuel rises sharply. What shift occurs in the market for airline service?',
+            options: [
+              { text: 'Demand curve shifts in.', correct: false },
+              { text: 'Demand curve shifts out.', correct: false },
+              { text: 'Supply curve shifts in.', correct: true },
+              { text: 'Supply curve shifts out.', correct: false },
+              { text: 'Both supply and demand curves shift in.', correct: false }
+            ],
+            feedback: 'Correct. Fuel is a key input cost for airlines. Higher input prices shift the supply curve inward. Note: this will cause movement along the demand curve (as price rises), but does not shift the demand curve itself.'
+          },
+          {
+            id: 'q4', type: 'multiple_choice',
+            text: 'The government lowers the regulated price of airline service. What shift occurs in the demand and supply curves?',
+            options: [
+              { text: 'Demand curve shifts in.', correct: false },
+              { text: 'Demand curve shifts out.', correct: false },
+              { text: 'Supply curve shifts in.', correct: false },
+              { text: 'Supply curve shifts out.', correct: false },
+              { text: 'No shift.', correct: true }
+            ],
+            feedback: 'Correct. A price change does not shift curves; it causes movement along them. When the government lowers the regulated price, quantity demanded increases and quantity supplied decreases (movements along the curves), but the curves themselves do not shift.'
+          },
+          {
+            id: 'q5', type: 'multiple_choice',
+            text: 'Suppose the demand curve for a good is represented by \\(P = 210 - 10Q_D\\). A decrease in the price of a substitute has reduced demand for this good by 10 units at every price. What is the equation for the new demand curve?',
+            options: [
+              { text: '\\(P = 200 - Q_D\\)', correct: false },
+              { text: '\\(P = 210 - Q_D\\)', correct: false },
+              { text: '\\(P = 200 - 10Q_D\\)', correct: false },
+              { text: '\\(P = 110 - 10Q_D\\)', correct: true },
+              { text: '\\(P = 100 - Q_D\\)', correct: false }
+            ],
+            feedback: 'Correct. If demand decreases by 10 units at every price, we need a new demand equation where \\(Q_D\\) is 10 units lower. The original \\(P = 210 - 10Q_D\\) gave \\(P = 10\\) when \\(Q_D = 20\\). The new curve must give \\(P = 10\\) when \\(Q_D = 10\\): \\(10 = \\text{intercept} - 10(10)\\), so the intercept is 110. The new equation is \\(P = 110 - 10Q_D\\).'
+          },
+          {
+            id: 'q6', type: 'multiple_choice',
+            text: 'Suppose the supply curve for a good is represented by \\(P = 4Q_S + 10\\). An improvement in technology allows suppliers to save $2 per unit. What is the equation for the new supply curve with price expressed in terms of quantity?',
+            options: [
+              { text: '\\(P = 4Q_S + 8\\)', correct: true },
+              { text: '\\(P = 4Q_S + 12\\)', correct: false },
+              { text: '\\(P = 6Q_S + 12\\)', correct: false },
+              { text: '\\(P = 6Q_S + 10\\)', correct: false },
+              { text: '\\(P = 8Q_S + 10\\)', correct: false }
+            ],
+            feedback: 'Correct. When technology improves and costs fall by $2 per unit, suppliers accept a lower price for the same quantity (or supply more at the same price). The slope remains 4, but the intercept decreases by 2. The new equation is \\(P = 4Q_S + 8\\).'
+          },
+          {
+            id: 'q7', type: 'short_answer',
+            text: 'A demand curve is \\(D(P) = 16 - 4P\\) and a supply curve is \\(S(P) = 2P - 2\\). Originally, these curves intersect at an equilibrium quantity of 4. After both curves shift outward, the new equilibrium quantity is 7.5. What is the change in equilibrium quantity?',
+            correctAnswer: '3.5',
+            feedback: 'Correct. The change in quantity is \\(7.5 - 4 = 3.5\\). When both demand and supply shift outward (right), the equilibrium quantity definitely increases. The effect on price depends on which curve shifts more.'
+          },
+          {
+            id: 'q8', type: 'multiple_choice',
+            text: 'If both demand and supply curves for a good shift outward, what can we conclude about equilibrium price and quantity?',
+            options: [
+              { text: 'Quantity decreases; price increases', correct: false },
+              { text: 'Quantity increases; price decreases', correct: false },
+              { text: 'Quantity increases; price increases', correct: false },
+              { text: 'Quantity increases; price may or may not change', correct: true },
+              { text: 'We cannot make any certain conclusions', correct: false }
+            ],
+            feedback: 'Correct. When both curves shift outward, equilibrium quantity must increase (the rightward shifts make more available). However, price could rise, fall, or stay the same depending on the relative magnitudes of the shifts. If supply shifts more than demand, price falls. If demand shifts more than supply, price rises.'
+          }
+        ];
+
+        PracticeQuiz.create('#practice-quiz-container', questions, { title: 'Module 4 Practice Quiz' });
+      })();
+
+    }); // end DOMContentLoaded
+  </script>
+
+</body>
+</html>

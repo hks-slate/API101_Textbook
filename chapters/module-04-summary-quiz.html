@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Quiz Module 4</title>
+  <link rel="stylesheet" href="../css/theme.css?v=3">
+  <link href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="site-nav__brand" aria-label="Harvard Kennedy School"><img class="site-nav__logo" src="../assets/images/hks-logo.svg" alt="Harvard Kennedy School"></a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <span class="sidebar__part-label">Practice Quiz Module 4</span>
+      <a href="#summary" class="sidebar__link sidebar__link--active">Scope</a>
+      <a href="#practice-quiz" class="sidebar__link">Practice Quiz</a>
+
+      <span class="sidebar__part-label" style="margin-top: var(--space-2xl);">Learning Path</span>
+      <a href="module-01-1-demand.html" class="sidebar__link">1. Demand Basics</a>
+      <a href="module-01-2-supply.html" class="sidebar__link">2. Supply Basics</a>
+      <a href="module-01-3-equilibrium.html" class="sidebar__link">3. Equilibrium Basics</a>
+      <a href="modules-1-3-summary-quiz.html" class="sidebar__link">Practice Quiz Modules 1-3</a>
+      <a href="module-02-demand-supply-shifters.html" class="sidebar__link">4. Demand &amp; Supply Shifters</a>
+      <a href="module-04-summary-quiz.html" class="sidebar__link" style="font-weight:600; color: var(--color-primary);">Practice Quiz Module 4</a>
+      <a href="module-03-consumer-producer-surplus.html" class="sidebar__link">5. Consumer &amp; Producer Surplus</a>
+      <a href="module-05-summary-quiz.html" class="sidebar__link">Practice Quiz Module 5</a>
+      <a href="module-06-cap-price-support-system.html" class="sidebar__link">6. CAP Price Support System</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="chapter-header">
+        <div class="chapter-header__part">Module 4</div>
+        <div class="chapter-header__number">Practice Quiz Module 4</div>
+        <h1 class="chapter-header__title">Demand &amp; Supply Shifters</h1>
+        <p class="chapter-header__subtitle">Review curve shifts, movements along curves, and the four-step equilibrium process.</p>
+      </header>
+
+      <h2 id="summary">Scope of Practice Quiz</h2>
+      <p>This checkpoint focuses on the core Module 4 skills. Use it to test whether you can distinguish movements from shifts, identify demand and supply shifters, and predict how equilibrium changes.</p>
+      <p>A movement along a curve is caused by the good's own price. A shift of a curve is caused by another factor, such as income, tastes, technology, input prices, regulation, expectations, or the number of buyers or sellers.</p>
+      <p>Use the four-step process to identify the market, determine which curve shifts, move the curve in the correct direction, and compare the new equilibrium with the old one.</p>
+
+      <h2 id="practice-quiz">Practice Quiz</h2>
+      <p>You can work through the questions in any order and receive feedback after each response.</p>
+      <p>Keep paper and a pen or pencil nearby so you can sketch graphs and work through calculations as you answer.</p>
+      <div id="practice-quiz-container"></div>
+
+      <nav class="chapter-nav">
+        <a href="module-02-demand-supply-shifters.html" class="chapter-nav__link chapter-nav__link--prev">
+          <span class="chapter-nav__direction">&larr; Previous</span>
+          <span class="chapter-nav__title">Module 4: Demand &amp; Supply Shifters</span>
+        </a>
+        <a href="module-03-consumer-producer-surplus.html" class="chapter-nav__link chapter-nav__link--next">
+          <span class="chapter-nav__direction">Next &rarr;</span>
+          <span class="chapter-nav__title">Module 5: Consumer &amp; Producer Surplus</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="../js/textbook.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      PracticeQuiz.loadFromJson('#practice-quiz-container', '../assets/quizzes/module4-quiz.json', {
+        title: 'Module 4 Practice Quiz',
+        layout: 'all'
+      });
+    });
+  </script>
+</body>
+</html>

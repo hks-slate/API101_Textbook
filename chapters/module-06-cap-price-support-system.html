@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 6: Putting It All Together: The CAP Price Support System</title>
+  <link rel="stylesheet" href="../css/theme.css?v=3">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../index.html" class="site-nav__brand" aria-label="Harvard Kennedy School"><img class="site-nav__logo" src="../assets/images/hks-logo.svg" alt="Harvard Kennedy School"></a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <span class="sidebar__part-label">Module 6</span>
+      <a href="#introduction" class="sidebar__link sidebar__link--active">Introduction</a>
+      <a href="#policy-connections" class="sidebar__link">Policy Connection</a>
+      <a href="#demonstrations" class="sidebar__link">Step-by-Step Graphing</a>
+      <a href="#welfare-analysis" class="sidebar__link">Welfare Analysis</a>
+      <a href="#key-terms" class="sidebar__link">Key Terms</a>
+      <a href="#summary" class="sidebar__link">Summary</a>
+
+      <span class="sidebar__part-label" style="margin-top: var(--space-2xl);">Learning Path</span>
+      <a href="module-01-1-demand.html" class="sidebar__link">1. Demand Basics</a>
+      <a href="module-01-2-supply.html" class="sidebar__link">2. Supply Basics</a>
+      <a href="module-01-3-equilibrium.html" class="sidebar__link">3. Equilibrium Basics</a>
+      <a href="modules-1-3-summary-quiz.html" class="sidebar__link">Practice Quiz Modules 1-3</a>
+      <a href="module-02-demand-supply-shifters.html" class="sidebar__link">4. Demand &amp; Supply Shifters</a>
+      <a href="module-04-summary-quiz.html" class="sidebar__link">Practice Quiz Module 4</a>
+      <a href="module-03-consumer-producer-surplus.html" class="sidebar__link">5. Consumer &amp; Producer Surplus</a>
+      <a href="module-05-summary-quiz.html" class="sidebar__link">Practice Quiz Module 5</a>
+      <a href="module-06-cap-price-support-system.html" class="sidebar__link" style="font-weight:600; color: var(--color-primary);">6. CAP Price Support System</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="chapter-header">
+        <div class="chapter-header__number">Module 6</div>
+        <h1 class="chapter-header__title">Putting It All Together: The CAP Price Support System</h1>
+        <p class="chapter-header__subtitle">
+          A full market analysis of price supports, government purchases, fiscal cost, and welfare consequences in the EU sugar market.
+        </p>
+      </header>
+
+      <div class="learning-objectives">
+        <div class="learning-objectives__title">Learning Objectives</div>
+        <ul>
+          <li>Use demand, supply, and equilibrium tools to analyze a price support policy</li>
+          <li>Explain how a government purchase commitment acts as a policy-driven demand shifter</li>
+          <li>Calculate the surplus created by a supported price above equilibrium</li>
+          <li>Separate producer gains, private consumer losses, fiscal cost, and efficiency implications</li>
+          <li>Apply welfare analysis to evaluate the CAP price support system</li>
+        </ul>
+      </div>
+
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Modules 1-5 built the tools one layer at a time. You learned how to construct demand and supply curves, locate equilibrium, analyze shifters, and measure consumer surplus, producer surplus, social surplus, and deadweight loss. This module puts those tools together in one policy application: the CAP price support system.
+      </p>
+      <p>
+        The question is no longer only whether the policy raises the price farmers receive. A full market analysis asks who gains, who loses, what the government must pay for, and what efficiency costs may result when policy moves the market away from the competitive equilibrium.
+      </p>
+
+      <!-- ===== POLICY CONNECTIONS ===== -->
+      <h2 id="policy-connections">Policy Connection: CAP as a Market Shifter</h2>
+
+      <p>
+        The EU's Common Agricultural Policy illustrates demand and supply analysis in action. Supporting high prices through government purchases created large agricultural surpluses and changed who gained and who lost in the EU sugar market. In this module, we examine the effect of CAP on the EU market as a demand shifter and then connect that shift to welfare analysis.
+      </p>
+
+      <h3>Price Support: A Demand Shifter in the EU Market</h3>
+      <p>
+        CAP's price support mechanism guaranteed farmers a minimum price for their output. Unlike the simple price floor we explored in Module 3, price support involves governments purchasing any unsold surplus at the supported price if market price falls below the guaranteed level.
+      </p>
+      <p>
+        Recall one of the demand shifters: the number of buyers. Our original demand curve depicts the relationship between the price of sugar and quantity demanded by consumers, where the government is not included as a buyer. We can therefore model government purchases as an increase in the number of buyers in the sugar market: the demand curve for sugar shifts outward.
+      </p>
+      <p>
+        Demand shifts, but by how much? With this policy, the government does not purchase sugar indiscriminately; it buys only the amount needed to support the target price of €3 per kilo. The policy's objective pins down the exact shift in demand.
+      </p>
+      <p>
+        Consider a typical farmer in the EU. That farmer has no incentive to sell sugar below €3, the price at which the government promised to buy any unsold output. The same logic applies to all farmers. Therefore, the new equilibrium price must be €3. The market clears only when quantity supplied at €3 equals total quantity demanded, which now includes government purchases.
+      </p>
+      <p>Our equilibrium condition from Module 3 becomes:</p>
+      <p class="equation-line">\(Q_S = Q_D + Q_{\text{GOV}}\)</p>
+      <p>
+        where \(Q_{\text{GOV}}\) denotes the quantity purchased by government. Using the supply and demand functions from Modules 1-2, and substituting €3 for \(P\), we can find the quantity purchased by the government.
+      </p>
+      <div class="math-steps">
+        <div class="math-step">
+          <div class="math-step__label">Quantity supplied at €3:</div>
+          <div class="math-step__expr">\(Q_S = 15P = 15(3) = 45\)</div>
+        </div>
+        <div class="math-step">
+          <div class="math-step__label">Consumer quantity demanded at €3:</div>
+          <div class="math-step__expr">\(Q_D = 50 - 10P = 50 - 10(3) = 20\)</div>
+        </div>
+        <div class="math-step">
+          <div class="math-step__label">Government purchases:</div>
+          <div class="math-step__expr">\(45 = 20 + Q_{\text{GOV}}\), so \(Q_{\text{GOV}} = 25\) million kg</div>
+        </div>
+      </div>
+      <p>
+        We can visualize this as an outward shift in demand by 25 million kg. The new demand curve, which includes government as a purchaser, meets the supply curve at €3.
+      </p>
+
+      <!-- ===== WORKED DEMONSTRATIONS ===== -->
+      <h2 id="demonstrations">Step-by-Step Graphing</h2>
+
+      <h3>Deriving Demand with Price Support</h3>
+      <p>Start from the Module 1 baseline:</p>
+      <div class="equation-line">
+        $$Q_D = 50 - 10P$$
+      </div>
+      <p>Modify the demand equation by adding the 25-unit shift due to the government's purchase:</p>
+      <div class="equation-line">
+        $$Q_D + Q_{\text{GOV}} = (50 + 25) - 10P = 75 - 10P$$
+      </div>
+
+      <h3>Visualizing the Price Support Policy</h3>
+      <p>
+        Follow the steps to see how the demand curve shifts and equilibrium changes. Use the <strong>Next Step</strong> button to build the graph one stage at a time.
+      </p>
+
+      <div class="graphing-methods">
+        <div class="graphing-method" id="dm1">
+          <div class="graphing-method__header">
+            <span class="graphing-method__badge">Demo 1</span>
+            <h4 class="graphing-method__title">Graphing the Demand Shift</h4>
+          </div>
+          <p class="graphing-method__intro">
+            The price support policy adds government purchases to consumer demand. Follow the steps to see how this shifts the demand curve and changes equilibrium.
+          </p>
+          <div class="demo-layout">
+            <div class="demo-layout__graph-col">
+              <div class="graph-container__svg-wrapper" id="dm1-graph"></div>
+              <p class="shift-figure__caption">Figure 6.1: Price support policy shifts the demand curve outward.</p>
+              <div class="graphing-method__controls">
+                <button id="dm1-next" class="graphing-method__next-btn">Next Step →</button>
+              </div>
+            </div>
+            <div class="demo-layout__desc-col">
+              <div class="demo-step-panel" id="dm1-desc">Click <strong>Next Step</strong> to build the demand shift one step at a time.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout--insight">
+        <div class="callout__title">Interpreting the Demand Shift Result</div>
+        <p>
+          The new equilibrium is \((Q', P') = (45, €3)\) — compared to \((Q^*, P^*) = (30, €2)\) before the policy.
+        </p>
+      </div>
+      <div class="callout callout--insight">
+        <div class="callout__title">What to Notice</div>
+        <p>
+          With the price support policy, consumers reduced their sugar purchases to 20 million kg. At the same time, producers increased their output to 45 million kg. These market responses are identical to those under the price floor set at €3 in Module 3. A major difference between the two policies is the fiscal cost that comes with the price support mechanism: the government purchases the entire surplus (the excess of quantity supplied over quantity demanded by consumers) at the supported price. Because all the surplus is purchased by the government, all producers are better off with this program.
+        </p>
+      </div>
+
+      <h3>Price Support, at What Cost?</h3>
+      <p>
+        Price support results in overproduction. Producers could have used their resources to produce alternative goods to meet other consumer demands. This represents a type of economic cost we will explore later in the course.
+      </p>
+      <p>
+        We now have all the information we need to calculate the fiscal cost of this program to the government. The government buys 25 million kg of sugar at €3/kg. Ignoring all other costs such as storage or disposal of sugar surplus, the government bears a fiscal cost of €75 million per year.
+      </p>
+      <div class="figure figure--with-controls">
+        <div class="figure__graph" id="cap-fiscal-cost-graph"></div>
+        <p class="shift-figure__caption shift-figure__caption--below">Figure 6.2: Fiscal cost of the price support equals the supported price times the government purchase quantity. This is shown by the shaded, bounded square shape.</p>
+      </div>
+      <p>
+        This example illustrates why the CAP created enormous costs. The surplus is not a one-time problem: as long as the price support remains above equilibrium, surpluses continue to accumulate year after year. Multiply €75 million by the number of years the policy ran, add storage costs across multiple commodities (sugar, butter, wine, grains, dairy), and the fiscal burden becomes staggering. The CAP consumed roughly 40% of the entire EU budget for decades.
+      </p>
+      <p>
+        This example also illustrates a broader point about policymaking. Policy interventions rarely make everyone better off. While CAP was intended to support farmers with stable prices, the costs were borne by consumers and taxpayers.
+      </p>
+
+      <h2 id="welfare-analysis">Welfare Analysis of the Price Support</h2>
+      <p>
+        The demand-shift graph tells us how the policy changes price and quantity. Welfare analysis asks a different question: how do consumer surplus, producer surplus, and fiscal cost change when the government becomes the additional buyer?
+      </p>
+      <p>
+        Click through the sequence below. The graph starts from the free-market equilibrium, then adds the policy-driven demand shift and the three main welfare consequences one layer at a time.
+      </p>
+
+      <div class="graphing-methods">
+        <div class="graphing-method" id="cap-welfare-demo">
+          <div class="graphing-method__header">
+            <span class="graphing-method__badge">Demo 2</span>
+            <h4 class="graphing-method__title">Welfare Effects of the Price Support</h4>
+          </div>
+          <p class="graphing-method__intro">
+            Follow the policy from the free-market benchmark to the supported price, government purchases, and the resulting changes in consumer surplus and producer surplus.
+          </p>
+          <div class="demo-layout">
+            <div class="demo-layout__graph-col">
+              <div class="graph-container__svg-wrapper" id="cap-welfare-graph"></div>
+              <p class="shift-figure__caption">Figure 6.3: Welfare effects of the CAP price support in the EU sugar market.</p>
+              <div class="graphing-method__controls">
+                <button id="cap-welfare-next" class="graphing-method__next-btn">Next Step →</button>
+              </div>
+            </div>
+            <div class="demo-layout__desc-col">
+              <div class="demo-step-panel" id="cap-welfare-desc">Click <strong>Next Step</strong> to build the welfare analysis one step at a time.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="surplus-readout-table surplus-readout-table--comparison" aria-label="Welfare summary for the CAP price support">
+        <thead>
+          <tr>
+            <th scope="col">Group or measure</th>
+            <th scope="col">Before CAP support</th>
+            <th scope="col">After CAP support</th>
+            <th scope="col">Interpretation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="surplus-readout-table__row surplus-readout-table__row--consumer">
+            <th scope="row">Private consumer surplus</th>
+            <td>€45 million</td>
+            <td>€20 million</td>
+            <td>Private consumers lose surplus because the supported price is higher.</td>
+          </tr>
+          <tr class="surplus-readout-table__row surplus-readout-table__row--producer">
+            <th scope="row">Producer surplus</th>
+            <td>€30 million</td>
+            <td>€67.5 million</td>
+            <td>Producers gain because they sell more output at a higher guaranteed price.</td>
+          </tr>
+          <tr class="surplus-readout-table__row surplus-readout-table__row--government">
+            <th scope="row">Fiscal cost</th>
+            <td>€0</td>
+            <td>€75 million</td>
+            <td>Calculated here as 25 million kg purchased at €3/kg. Storage/disposal costs and resale value are ignored.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout--warning">
+        <div class="callout__title">Fiscal Cost Is Not Automatically Deadweight Loss</div>
+        <p>
+          The €75 million fiscal cost is a taxpayer cost, but it is not automatically the same as deadweight loss. If the purchased surplus is stored, spoiled, or disposed of, much of the fiscal cost may correspond to wasted resources. If some purchased sugar is used in a way that creates value, the efficiency loss is smaller. For that reason, the graph focuses on the directly measured welfare components: private consumer surplus, producer surplus, and fiscal cost.
+        </p>
+      </div>
+
+      <div class="callout callout--insight">
+        <div class="callout__title">What Happened to the Surplus?</div>
+        <p>
+          The purchased surplus had to go somewhere. Some agricultural surpluses were stored, some spoiled or were disposed of, and some were sold or exported at low prices. When surplus products are sold abroad at low prices, they can affect producers and consumers in other countries; that international spillover is part of the broader CAP story. Those export effects can be analyzed with the supply-shift tools from Module 4, but the central welfare point here is domestic: the price support helped EU producers, hurt private consumers, and required taxpayer spending.
+        </p>
+      </div>
+
+      <section id="key-terms" data-glossary-through="6" data-current-module="6"></section>
+
+      <h2 id="summary">Summary</h2>
+      <p>
+        The CAP price support system brings the full sequence together. Demand and supply locate the baseline equilibrium. The supported price creates a gap between private quantity demanded and producer quantity supplied. Government purchases absorb that gap and can be represented as a policy-driven outward shift in total demand.
+      </p>
+      <p>
+        Welfare analysis shows why this policy is contested. It supported producers, harmed private consumers, required taxpayer spending, and may have created efficiency losses depending on what happened to the purchased surplus. The point of the model is not to decide the policy question for us, but to make the trade-offs visible.
+      </p>
+
+      <nav class="chapter-nav">
+        <a href="module-05-summary-quiz.html" class="chapter-nav__link chapter-nav__link--prev">
+          <span class="chapter-nav__direction">&larr; Previous</span>
+          <span class="chapter-nav__title">Practice Quiz Module 5</span>
+        </a>
+        <a href="../index.html" class="chapter-nav__link chapter-nav__link--next">
+          <span class="chapter-nav__direction">Finish &rarr;</span>
+          <span class="chapter-nav__title">Back to Home</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <script src="../js/textbook.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof renderMathInElement !== 'undefined') {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '\\(', right: '\\)', display: false }
+          ]
+        });
+      }
+
+      function addEqGuides(graph, q, p, color) {
+        color = color || '#1a5276';
+        graph.addDashedLine([{ x: q, y: p }, { x: q, y: 0 }], color, { strokeWidth: 1.2, className: 'dynamic' });
+        graph.addDashedLine([{ x: q, y: p }, { x: 0, y: p }], color, { strokeWidth: 1.2, className: 'dynamic' });
+      }
+
+      function makeStepThrough(graph, frames, descs, descEl, btn) {
+        var frame = -1;
+        var total = frames.length;
+
+        function drawFrame(i) {
+          graph.clear();
+          frames[i]();
+          descEl.innerHTML = '<span class="gm-step-counter">Step ' + (i + 1) + ' of ' + total + '</span>' + descs[i];
+          if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(descEl, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '\\(', right: '\\)', display: false }
+              ]
+            });
+          }
+        }
+
+        function reset() {
+          frame = -1;
+          graph.clear();
+          descEl.innerHTML = 'Click <strong>Next Step \u2192</strong> to build the figure one step at a time.';
+          btn.textContent = 'Next Step \u2192';
+          btn.classList.remove('graphing-method__next-btn--replay');
+        }
+
+        btn.addEventListener('click', function() {
+          if (frame >= total - 1) {
+            reset();
+            return;
+          }
+          frame++;
+          drawFrame(frame);
+          if (frame >= total - 1) {
+            btn.textContent = '\u21BA Reset';
+            btn.classList.add('graphing-method__next-btn--replay');
+          }
+        });
+
+        reset();
+      }
+
+      function makeCumulativeStepThrough(graph, frames, descs, descEl, btn) {
+        var frame = -1;
+        var total = frames.length;
+
+        function showDesc(i) {
+          descEl.innerHTML = '<span class="gm-step-counter">Step ' + (i + 1) + ' of ' + total + '</span>' + descs[i];
+          if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(descEl, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '\\(', right: '\\)', display: false }
+              ]
+            });
+          }
+        }
+
+        function reset() {
+          frame = -1;
+          graph.clear();
+          descEl.innerHTML = 'Click <strong>Next Step \u2192</strong> to build the welfare analysis one layer at a time.';
+          btn.textContent = 'Next Step \u2192';
+          btn.classList.remove('graphing-method__next-btn--replay');
+        }
+
+        btn.addEventListener('click', function() {
+          if (frame >= total - 1) {
+            reset();
+            return;
+          }
+          frame++;
+          frames[frame]();
+          showDesc(frame);
+          if (frame >= total - 1) {
+            btn.textContent = '\u21BA Reset';
+            btn.classList.add('graphing-method__next-btn--replay');
+          }
+        });
+
+        reset();
+      }
+
+      function rebuildBtn(id) {
+        var old = document.getElementById(id);
+        if (!old) return old;
+        var fresh = old.cloneNode(true);
+        old.parentNode.replaceChild(fresh, old);
+        return fresh;
+      }
+
+      function curvePoints(fn, xMin, xMax, steps) {
+        var points = [];
+        var n = steps || 80;
+        for (var i = 0; i <= n; i++) {
+          var x = xMin + (xMax - xMin) * i / n;
+          var y = fn(x);
+          if (Number.isFinite(y)) points.push({ x: x, y: y });
+        }
+        return points;
+      }
+
+      function animateLine(graph, points, color, opts) {
+        opts = opts || {};
+        var delay = opts.delay || 0;
+        var duration = opts.duration || 900;
+        var strokeWidth = opts.strokeWidth || 1.5;
+        var className = opts.className || 'dynamic';
+        var opacity = opts.opacity == null ? 0.9 : opts.opacity;
+        var dashedFinal = opts.dashedFinal !== false;
+        var line = d3.line()
+          .x(function(d) { return graph.xScale(d.x); })
+          .y(function(d) { return graph.yScale(d.y); });
+        var path = graph.g.append('path')
+          .datum(points)
+          .attr('class', 'graph-reference ' + className)
+          .attr('d', line)
+          .attr('fill', 'none')
+          .attr('stroke', color)
+          .attr('stroke-width', strokeWidth)
+          .attr('opacity', opacity);
+        var length = path.node().getTotalLength();
+        path
+          .attr('stroke-dasharray', length + ' ' + length)
+          .attr('stroke-dashoffset', length)
+          .transition()
+          .delay(delay)
+          .duration(duration)
+          .ease(d3.easeCubicOut)
+          .attr('stroke-dashoffset', 0)
+          .on('end', function() {
+            if (dashedFinal) d3.select(this).attr('stroke-dasharray', '5,4');
+            else d3.select(this).attr('stroke-dasharray', null);
+          });
+        return path;
+      }
+
+      function fadeLabel(graph, x, y, text, opts) {
+        opts = opts || {};
+        var labelOpts = {};
+        Object.keys(opts).forEach(function(key) {
+          if (key !== 'delay' && key !== 'duration') labelOpts[key] = opts[key];
+        });
+        labelOpts.className = opts.className || 'dynamic';
+        var label = graph.addLabel(x, y, text, labelOpts);
+        label.attr('opacity', 0)
+          .transition()
+          .delay(opts.delay || 0)
+          .duration(opts.duration || 450)
+          .attr('opacity', 1);
+        return label;
+      }
+
+      function animatedGuides(graph, q, p, color, delay) {
+        color = color || '#1a5276';
+        delay = delay || 0;
+        animateLine(graph, [{ x: q, y: p }, { x: q, y: 0 }], color, {
+          delay: delay,
+          duration: 650,
+          strokeWidth: 1.2
+        });
+        animateLine(graph, [{ x: q, y: p }, { x: 0, y: p }], color, {
+          delay: delay + 180,
+          duration: 650,
+          strokeWidth: 1.2
+        });
+      }
+
+      function fadePoint(graph, x, y, opts) {
+        opts = opts || {};
+        var layer = graph.axisLayer || graph.g;
+        layer.append('circle')
+          .attr('class', 'graph-point ' + (opts.className || 'dynamic'))
+          .attr('cx', graph.xScale(x))
+          .attr('cy', graph.yScale(y))
+          .attr('r', opts.radius || 5)
+          .attr('fill', opts.color || '#1a5276')
+          .attr('stroke', '#fff')
+          .attr('stroke-width', 1.5)
+          .attr('opacity', 0)
+          .transition()
+          .delay(opts.delay || 0)
+          .duration(opts.duration || 450)
+          .attr('opacity', 1);
+        if (opts.label) {
+          fadeLabel(graph, x, y, opts.label, {
+            color: opts.color || '#1a5276',
+            fontSize: opts.fontSize || '13px',
+            fontWeight: opts.fontWeight || '700',
+            delay: (opts.delay || 0) + 180,
+            className: opts.className || 'dynamic'
+          });
+        }
+      }
+
+      function fadeArea(graph, data, color, opts) {
+        opts = opts || {};
+        var finalOpacity = opts.opacity == null ? 0.2 : opts.opacity;
+        var area = graph.addShaded(data, color, { opacity: finalOpacity, className: opts.className || 'dynamic' });
+        area.attr('opacity', 0)
+          .transition()
+          .delay(opts.delay || 0)
+          .duration(opts.duration || 650)
+          .attr('opacity', finalOpacity);
+        return area;
+      }
+
+      (function() {
+        var graph = EconGraph.create('#cap-fiscal-cost-graph', {
+          xLabel: 'Quantity (millions of kg/year)',
+          yLabel: 'Price (\u20AC/kg)',
+          xDomain: [0, 60],
+          yDomain: [0, 5.5],
+          height: 360
+        });
+        if (!graph) return;
+
+        var D = function(x) { return 5 - x / 10; };
+        var S = function(x) { return x / 15; };
+        var supportedPrice = 3;
+        var qDemanded = 20;
+        var qSupplied = 45;
+
+        graph.addShaded({
+          xRange: [qDemanded, qSupplied],
+          yTop: supportedPrice,
+          yBottom: 0
+        }, '#9b59b6', { opacity: 0.22 });
+
+        graph.addLine(D, '#2e86c1', { label: 'D', strokeWidth: 2.5 });
+        graph.addLine(S, '#145a32', { label: 'S', strokeWidth: 2.5 });
+        graph.addDashedLine([{ x: 0, y: supportedPrice }, { x: qSupplied, y: supportedPrice }], '#7d3c98', { strokeWidth: 2 });
+        graph.addDashedLine([{ x: qDemanded, y: 0 }, { x: qDemanded, y: supportedPrice }], '#2e86c1', { strokeWidth: 1.6 });
+        graph.addDashedLine([{ x: qSupplied, y: 0 }, { x: qSupplied, y: supportedPrice }], '#145a32', { strokeWidth: 1.6 });
+        graph.addPoint(qDemanded, supportedPrice, { color: '#2e86c1', radius: 5, label: 'Q_D = 20' });
+        graph.addPoint(qSupplied, supportedPrice, { color: '#145a32', radius: 5, label: 'Q_S = 45' });
+        graph.addPoint(30, 2, { color: '#8a8f94', radius: 4, label: '(Q*, P*)' });
+        graph.addLabel(12, supportedPrice + 0.35, 'Price support = €3', {
+          color: '#7d3c98',
+          fontSize: '12px',
+          fontWeight: '800',
+          anchor: 'middle'
+        });
+        graph.addLabel(32.5, 1.55, 'Fiscal cost = €75m', {
+          color: '#6c3483',
+          fontSize: '13px',
+          fontWeight: '800',
+          anchor: 'middle'
+        });
+        graph.addLabel(32.5, 0.45, 'Government purchase = 25', {
+          color: '#6c3483',
+          fontSize: '12px',
+          fontWeight: '800',
+          anchor: 'middle'
+        });
+      })();
+
+      (function() {
+        var dm1 = EconGraph.create('#dm1-graph', {
+          xLabel: 'Quantity (millions of kg/year)',
+          yLabel: 'Price (\u20AC/kg)',
+          xDomain: [0, 90],
+          yDomain: [0, 9]
+        });
+        if (!dm1) return;
+
+        var origD  = function(x) { return 5 - x / 10; };
+        var origS  = function(x) { return x / 15; };
+        var newD   = function(x) { return 7.5 - x / 10; };
+
+        var dm1Frames = [
+          function() {
+            dm1.addLine(origD, '#2e86c1', { label: 'D', strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addLine(origS, '#145a32', { label: 'S', strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addPoint(30, 2, { color: '#1a5276', label: '(Q*, P*)', className: 'dynamic' });
+            addEqGuides(dm1, 30, 2);
+          },
+          function() {
+            dm1.addLine(origD, '#2e86c1', { label: 'D', strokeWidth: 1.5, dashed: true, className: 'dynamic' });
+            dm1.addLine(origS, '#145a32', { label: 'S', strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addPoint(30, 2, { color: '#999', label: '(Q*, P*)', radius: 4, className: 'dynamic' });
+            addEqGuides(dm1, 30, 2, '#999');
+          },
+          function() {
+            dm1.addLine(origD, '#2e86c1', { label: 'D', strokeWidth: 1.5, dashed: true, className: 'dynamic' });
+            dm1.addLine(origS, '#145a32', { label: 'S', strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addPoint(30, 2, { color: '#999', radius: 4, className: 'dynamic' });
+            dm1.addPoint(0, 7.5, { color: '#2e86c1', radius: 5, className: 'dynamic' });
+            dm1.addLabel(2, 8.1, 'New y-int = 7.5', { color: '#2e86c1', fontSize: '11px', fontWeight: 'bold', anchor: 'start', className: 'dynamic' });
+          },
+          function() {
+            dm1.addLine(origD, '#2e86c1', { label: 'D',  strokeWidth: 1.5, dashed: true, className: 'dynamic' });
+            dm1.addLine(origS, '#145a32', { label: 'S',  strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addLine(newD,  '#2e86c1', { label: "D'", strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addPoint(30, 2, { color: '#999', radius: 4, className: 'dynamic' });
+          },
+          function() {
+            dm1.addLine(origD, '#2e86c1', { label: 'D',  strokeWidth: 1.5, dashed: true, className: 'dynamic' });
+            dm1.addLine(origS, '#145a32', { label: 'S',  strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addLine(newD,  '#2e86c1', { label: "D'", strokeWidth: 2.5, className: 'dynamic' });
+            dm1.addPoint(30, 2, { color: '#999', label: '(Q*, P*)', radius: 4, className: 'dynamic' });
+            dm1.addPoint(45, 3, { color: '#1a5276', label: "(Q\u2032, P\u2032)", className: 'dynamic' });
+            addEqGuides(dm1, 45, 3);
+          }
+        ];
+
+        var dm1Descs = [
+          '<strong>Step 1 — Original market</strong><br>'
+          + 'Draw \\(Q_D = 50 - 10P\\) and \\(Q_S = 15P\\).<br>'
+          + 'Solve for equilibrium by setting \\(Q_D = Q_S\\):<br>'
+          + '<span class="demo-equation">\\(50 - 10P = 15P\\)</span>'
+          + '<span class="demo-equation">\\(50 = 25P\\)</span>'
+          + '<span class="demo-equation">\\(P^* = 2,\\ Q^* = 30\\)</span>'
+          + 'Plot \\((Q^*, P^*)\\) at (30, 2).',
+
+          '<strong>Step 2 — Identify the shift</strong><br>'
+          + 'The EU announces an intervention buying scheme,<br>'
+          + 'pledging to purchase sugar at a guaranteed price.<br>'
+          + 'This adds demand on top of private buyers,<br>'
+          + 'shifting the demand curve <em>outward</em>.<br>'
+          + '\\((Q^*, P^*)\\), where P = 2 and Q = 30, is now faded — it will move.',
+
+          '<strong>Step 3 — Write the new equation</strong><br>'
+          + 'EU intervention adds 25 million kg at every price:<br>'
+          + '<span class="demo-equation">\\(Q_D^{\\prime} = (50 + 25) - 10P\\)</span>'
+          + '<span class="demo-equation">\\(Q_D^{\\prime} = 75 - 10P\\)</span>'
+          + 'Invert the equation to solve for P in terms of Q:<br>'
+          + '<span class="demo-equation">\\(P = 7.5 - Q/10\\)</span>'
+          + 'The y-intercept rises from 5 \u2192 <strong>7.5</strong>. Plot it.',
+
+          '<strong>Step 4 — Draw D\u2032</strong><br>'
+          + 'Same slope (\u22121/10) as D, but starting at (0, 7.5).<br>'
+          + 'D\u2032 is parallel to D, shifted <em>25 units right</em>.<br>'
+          + 'Every point on D moves horizontally to the right.',
+
+          '<strong>Step 5 — New equilibrium</strong><br>'
+          + 'Set \\(Q_D^{\\prime} = Q_S\\):<br>'
+          + '<span class="demo-equation">\\(75 - 10P = 15P\\)</span>'
+          + '<span class="demo-equation">\\(75 = 25P\\)</span>'
+          + '<span class="demo-equation">\\(P^{\\prime} = 3,\\ Q^{\\prime} = 45\\)</span>'
+          + 'Mark \\((Q^{\\prime}, P^{\\prime})\\). Price rose \u20AC2 \u2192 \u20AC3; quantity rose 30 \u2192 45.'
+        ];
+
+        var dm1Desc = document.getElementById('dm1-desc');
+        var dm1Btn  = rebuildBtn('dm1-next');
+        if (dm1Desc && dm1Btn) makeStepThrough(dm1, dm1Frames, dm1Descs, dm1Desc, dm1Btn);
+      })();
+
+      (function() {
+        var welfare = EconGraph.create('#cap-welfare-graph', {
+          xLabel: 'Quantity (millions of kg/year)',
+          yLabel: 'Price (\u20AC/kg)',
+          xDomain: [0, 60],
+          yDomain: [0, 5.5],
+          height: 380
+        });
+        if (!welfare) return;
+
+        var D = function(x) { return 5 - x / 10; };
+        var S = function(x) { return x / 15; };
+        var DTotal = function(x) { return 7.5 - x / 10; };
+        var eqQ = 30;
+        var eqP = 2;
+        var supportP = 3;
+        var qD = 20;
+        var qS = 45;
+
+        function baseCurves(fadedDemand) {
+          welfare.addLine(D, '#2e86c1', { label: 'D', strokeWidth: fadedDemand ? 1.6 : 2.5, dashed: fadedDemand });
+          welfare.addLine(S, '#145a32', { label: 'S', strokeWidth: 2.5 });
+        }
+
+        function supportGuides(delay) {
+          delay = delay || 0;
+          animateLine(welfare, [{ x: 0, y: supportP }, { x: qS, y: supportP }], '#7d3c98', {
+            delay: delay,
+            duration: 850,
+            strokeWidth: 1.8,
+            dashedFinal: true,
+            className: 'dynamic policy-layer'
+          });
+          animateLine(welfare, [{ x: qD, y: 0 }, { x: qD, y: supportP }], '#2e86c1', {
+            delay: delay + 650,
+            duration: 700,
+            strokeWidth: 1.2,
+            dashedFinal: true,
+            className: 'dynamic policy-layer'
+          });
+          animateLine(welfare, [{ x: qS, y: 0 }, { x: qS, y: supportP }], '#145a32', {
+            delay: delay + 1150,
+            duration: 700,
+            strokeWidth: 1.2,
+            dashedFinal: true,
+            className: 'dynamic policy-layer'
+          });
+        }
+
+        function fiscalRectangle(delay) {
+          delay = delay || 0;
+          fadeArea(welfare, {
+            xRange: [qD, qS],
+            yTop: supportP,
+            yBottom: 0
+          }, '#8e44ad', { opacity: 0.22, delay: delay, duration: 700, className: 'dynamic policy-layer fiscal-layer' });
+          fadeLabel(welfare, (qD + qS) / 2, 1.5, 'Fiscal cost = 25 × €3 = €75m', {
+            color: '#6c3483',
+            fontSize: '12px',
+            fontWeight: '800',
+            anchor: 'middle',
+            delay: delay + 650,
+            className: 'dynamic policy-layer fiscal-layer'
+          });
+        }
+
+        function surplusGapLabel(delay) {
+          delay = delay || 0;
+          animateLine(welfare, [{ x: qD, y: 0.04 }, { x: qS, y: 0.04 }], '#6c3483', {
+            delay: delay,
+            duration: 800,
+            strokeWidth: 2.2,
+            dashedFinal: false,
+            className: 'dynamic policy-layer gap-layer'
+          });
+          fadeLabel(welfare, (qD + qS) / 2, 0.34, 'Government purchase = 25', {
+            color: '#6c3483',
+            fontSize: '12px',
+            fontWeight: '800',
+            anchor: 'middle',
+            delay: delay + 750,
+            className: 'dynamic policy-layer gap-layer'
+          });
+        }
+
+        function outlineArea(points, color, opts) {
+          opts = opts || {};
+          animateLine(welfare, points, color, {
+            delay: opts.delay || 0,
+            duration: opts.duration || 900,
+            strokeWidth: opts.strokeWidth || 2.4,
+            dashedFinal: false,
+            opacity: opts.opacity == null ? 0.95 : opts.opacity,
+            className: opts.className || 'dynamic'
+          });
+        }
+
+        function dimLayer(selector, opacity, delay) {
+          delay = delay || 0;
+          welfare.g.selectAll(selector)
+            .transition()
+            .delay(delay)
+            .duration(450)
+            .attr('opacity', opacity);
+          if (welfare.axisLayer) {
+            welfare.axisLayer.selectAll(selector)
+              .transition()
+              .delay(delay)
+              .duration(450)
+              .attr('opacity', opacity);
+          }
+        }
+
+        var welfareFrames = [
+          function() {
+            baseCurves(false);
+            fadeArea(welfare, { xRange: [0, eqQ], yTop: D, yBottom: eqP }, '#2e86c1', { opacity: 0.18, delay: 150, className: 'dynamic baseline-welfare' });
+            fadeArea(welfare, { xRange: [0, eqQ], yTop: eqP, yBottom: S }, '#1e8449', { opacity: 0.18, delay: 550, className: 'dynamic baseline-welfare' });
+            animatedGuides(welfare, eqQ, eqP, '#1a5276', 950);
+            fadePoint(welfare, eqQ, eqP, { color: '#1a5276', radius: 6, label: '(Q*, P*)', delay: 1250, className: 'dynamic baseline-welfare' });
+            fadeLabel(welfare, 8, 3.4, 'CS = €45m', { color: '#2e86c1', fontSize: '12px', fontWeight: '800', anchor: 'middle', delay: 1650, className: 'dynamic baseline-welfare' });
+            fadeLabel(welfare, 8, 1.1, 'PS = €30m', { color: '#1e8449', fontSize: '12px', fontWeight: '800', anchor: 'middle', delay: 1850, className: 'dynamic baseline-welfare' });
+          },
+          function() {
+            dimLayer('.baseline-welfare', 0.16, 0);
+            animateLine(welfare, curvePoints(DTotal, 20, 60, 90), '#2e86c1', { delay: 150, duration: 950, strokeWidth: 2.8, dashedFinal: false, className: 'dynamic policy-layer' });
+            fadeLabel(welfare, 54, 2.2, "D'", { color: '#2e86c1', fontSize: '13px', fontWeight: '800', delay: 1000, background: false, className: 'dynamic policy-layer' });
+            supportGuides(650);
+            fadePoint(welfare, qD, supportP, { color: '#2e86c1', radius: 5, label: 'Q_D = 20', delay: 1500, className: 'dynamic policy-layer quantity-label' });
+            fadePoint(welfare, qS, supportP, { color: '#145a32', radius: 5, label: 'Q_S = 45', delay: 1850, className: 'dynamic policy-layer quantity-label' });
+            fiscalRectangle(2250);
+            surplusGapLabel(2700);
+          },
+          function() {
+            dimLayer('.baseline-welfare', 0, 0);
+            dimLayer('.policy-layer', 0.12, 0);
+            dimLayer('.fiscal-layer', 0.06, 0);
+            fadeArea(welfare, { xRange: [0, qD], yTop: D, yBottom: supportP }, '#2e86c1', { opacity: 0.32, delay: 150, className: 'dynamic final-welfare consumer-focus' });
+            fadeLabel(welfare, 3, 3.4, 'CS = €20m', { color: '#2e86c1', fontSize: '12px', fontWeight: '800', delay: 750, className: 'dynamic final-welfare consumer-focus' });
+            outlineArea([
+              { x: 0, y: eqP },
+              { x: 0, y: supportP },
+              { x: qD, y: supportP },
+              { x: eqQ, y: eqP },
+              { x: 0, y: eqP }
+            ], '#2e86c1', { delay: 950, className: 'dynamic consumer-focus' });
+            fadeLabel(welfare, 1.9, 2.2, 'Private consumers lose €25m', { color: '#2e86c1', fontSize: '11px', fontWeight: '700', delay: 1350, className: 'dynamic final-welfare consumer-focus' });
+          },
+          function() {
+            dimLayer('.consumer-focus', 0.16, 0);
+            dimLayer('.policy-layer', 0.09, 0);
+            dimLayer('.fiscal-layer', 0.07, 0);
+            fadeArea(welfare, { xRange: [0, qS], yTop: supportP, yBottom: S }, '#1e8449', { opacity: 0.28, delay: 150, className: 'dynamic final-welfare producer-focus' });
+            outlineArea([
+              { x: 0, y: eqP },
+              { x: 0, y: supportP },
+              { x: qS, y: supportP },
+              { x: eqQ, y: eqP },
+              { x: 0, y: eqP }
+            ], '#1e8449', { delay: 900, className: 'dynamic producer-focus' });
+            fadeLabel(welfare, 2, 1.5, 'PS = €67.5m', { color: '#1e8449', fontSize: '12px', fontWeight: '800', delay: 1150, className: 'dynamic final-welfare producer-focus' });
+            fadeLabel(welfare, 13, 2.5, 'Producers gain €37.5m', { color: '#1e8449', fontSize: '11px', fontWeight: '700', delay: 1500, className: 'dynamic final-welfare producer-focus' });
+            fadePoint(welfare, qS, supportP, { color: '#1a5276', radius: 6, label: "(Q\u2032, P\u2032)", delay: 1750 });
+          }
+        ];
+
+        var welfareDescs = [
+          '<strong>Step 1 — Free-market benchmark</strong><br>'
+          + 'At \\((Q^*, P^*) = (30, 2)\\), private consumer surplus is €45 million and producer surplus is €30 million. There is no fiscal cost and no deadweight loss at the competitive equilibrium.',
+
+          '<strong>Step 2 — Policy-driven demand shift</strong><br>'
+          + 'The government enters as an additional buyer, so total demand shifts outward until the supported price of €3 is sustained. Private consumers buy \\(Q_D = 20\\), producers supply \\(Q_S = 45\\), and the government purchases the 25 million kg gap.',
+
+          '<strong>Step 3 — Private consumers lose surplus</strong><br>'
+          + 'At €3, private consumers buy only \\(Q_D = 20\\) million kg. Their consumer surplus falls from €45 million to €20 million.',
+
+          '<strong>Step 4 — Producers gain surplus</strong><br>'
+          + 'At the supported price, producers sell \\(Q_S = 45\\) million kg at €3/kg because the government buys the surplus. Producer surplus rises from €30 million to €67.5 million, while the fiscal cost remains €75 million.'
+        ];
+
+        var welfareDesc = document.getElementById('cap-welfare-desc');
+        var welfareBtn = rebuildBtn('cap-welfare-next');
+        if (welfareDesc && welfareBtn) makeCumulativeStepThrough(welfare, welfareFrames, welfareDescs, welfareDesc, welfareBtn);
+      })();
+    });
+  </script>
+</body>
+</html>

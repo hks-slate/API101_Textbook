@@ -1,0 +1,194 @@
+[
+  {
+    "id": "m4-buyers-shift",
+    "module": "Module 4",
+    "skill": "Demand Shifters",
+    "type": "multiple_choice",
+    "text": "China attracts new foreign investors who travel frequently and value fast transportation. What happens in the market for airline service between Beijing and Shanghai?",
+    "options": [
+      {
+        "text": "Demand shifts left.",
+        "correct": false
+      },
+      {
+        "text": "Demand shifts right.",
+        "correct": true
+      },
+      {
+        "text": "Supply shifts left.",
+        "correct": false
+      },
+      {
+        "text": "There is no shift.",
+        "correct": false
+      }
+    ],
+    "feedback": "The number of buyers rises. At every price, more people want airline service, so demand shifts right."
+  },
+  {
+    "id": "m4-substitute-quality",
+    "module": "Module 4",
+    "skill": "Substitutes",
+    "type": "multiple_choice",
+    "text": "The quality of a no-toll highway connecting two cities deteriorates. What happens to demand for airline service between those cities?",
+    "options": [
+      {
+        "text": "Demand for airline service shifts left.",
+        "correct": false
+      },
+      {
+        "text": "Demand for airline service shifts right.",
+        "correct": true
+      },
+      {
+        "text": "Supply of airline service shifts right.",
+        "correct": false
+      },
+      {
+        "text": "Only price changes; no curve shifts.",
+        "correct": false
+      }
+    ],
+    "feedback": "The highway is a substitute for air travel. When the substitute becomes less attractive, more travelers switch toward airline service, shifting demand right."
+  },
+  {
+    "id": "m4-input-cost",
+    "module": "Module 4",
+    "skill": "Supply Shifters",
+    "type": "multiple_choice",
+    "text": "The price of airplane fuel rises sharply. Which curve shifts in the market for airline service?",
+    "options": [
+      {
+        "text": "Demand shifts left.",
+        "correct": false
+      },
+      {
+        "text": "Demand shifts right.",
+        "correct": false
+      },
+      {
+        "text": "Supply shifts left.",
+        "correct": true
+      },
+      {
+        "text": "Supply shifts right.",
+        "correct": false
+      }
+    ],
+    "feedback": "Fuel is an input cost. Higher input costs make production more expensive, so firms supply less at every price and the supply curve shifts left."
+  },
+  {
+    "id": "m4-price-change",
+    "module": "Module 4",
+    "skill": "Movement vs Shift",
+    "type": "multiple_choice",
+    "text": "The government lowers the regulated price of airline service. What happens to the demand and supply curves?",
+    "options": [
+      {
+        "text": "Demand shifts right and supply shifts left.",
+        "correct": false
+      },
+      {
+        "text": "Demand shifts left and supply shifts right.",
+        "correct": false
+      },
+      {
+        "text": "No curve shifts; the price change causes movement along the curves.",
+        "correct": true
+      },
+      {
+        "text": "Both curves shift right.",
+        "correct": false
+      }
+    ],
+    "feedback": "A change in the good's own price causes movement along demand and supply. A curve shifts only when another factor changes."
+  },
+  {
+    "id": "m4-demand-equation-shift",
+    "module": "Module 4",
+    "skill": "Algebraic Shifts",
+    "type": "multiple_choice",
+    "text": "The demand curve is \\(P = 210 - 10Q_D\\). A decrease in the price of a substitute reduces demand by 10 units at every price. Which new demand curve represents that leftward shift?",
+    "options": [
+      {
+        "text": "\\(P = 200 - Q_D\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 210 - Q_D\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 200 - 10Q_D\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 110 - 10Q_D\\)",
+        "correct": true
+      }
+    ],
+    "feedback": "A 10-unit decrease in quantity demanded at every price means the curve shifts left. Keeping the same slope, the new intercept is 110, so the new curve is \\(P = 110 - 10Q_D\\)."
+  },
+  {
+    "id": "m4-supply-equation-shift",
+    "module": "Module 4",
+    "skill": "Algebraic Shifts",
+    "type": "multiple_choice",
+    "text": "The supply curve is \\(P = 4Q_S + 10\\). A technology improvement saves suppliers $2 per unit. What is the new supply curve?",
+    "options": [
+      {
+        "text": "\\(P = 4Q_S + 8\\)",
+        "correct": true
+      },
+      {
+        "text": "\\(P = 4Q_S + 12\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 6Q_S + 12\\)",
+        "correct": false
+      },
+      {
+        "text": "\\(P = 8Q_S + 10\\)",
+        "correct": false
+      }
+    ],
+    "feedback": "The technology improvement lowers the price producers require for any quantity by $2. The slope stays the same, and the intercept falls from 10 to 8."
+  },
+  {
+    "id": "m4-outward-shifts-quantity",
+    "module": "Module 4",
+    "skill": "Equilibrium Changes",
+    "type": "short_answer",
+    "text": "An outward shift in both demand and supply moves equilibrium quantity from 4 to 7.5. What is the change in equilibrium quantity?",
+    "feedback": "The change is \\(7.5 - 4 = 3.5\\). When both curves shift outward, equilibrium quantity rises.",
+    "correctAnswer": "3.5",
+    "tolerance": 0.01
+  },
+  {
+    "id": "m4-outward-shifts-price",
+    "module": "Module 4",
+    "skill": "Equilibrium Changes",
+    "type": "multiple_choice",
+    "text": "If both demand and supply shift outward, what can we conclude about the new equilibrium price and quantity?",
+    "options": [
+      {
+        "text": "Quantity decreases; price increases.",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price decreases.",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price increases.",
+        "correct": false
+      },
+      {
+        "text": "Quantity increases; price may rise, fall, or stay the same.",
+        "correct": true
+      }
+    ],
+    "feedback": "Both outward shifts increase equilibrium quantity. Price depends on which curve shifts more: demand pressure pushes price up, while supply pressure pushes price down."
+  }
+]

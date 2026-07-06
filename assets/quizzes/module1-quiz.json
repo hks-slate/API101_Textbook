@@ -1,0 +1,302 @@
+[
+  {
+    "id": "36ee9b956ed4bbc3df416dc3bb19ad19",
+    "type": "short_answer",
+    "text": "Suppose that the demand for a good is given by the equation Q_D = 8 – 4P. &nbsp; How many units are demanded at price 1?",
+    "feedback": "Feedback: You can solve this using algebra. Plug in the given price for P and solve the equation to find units demanded. Demand at price 1 is given by Q_D = 8 – 4*1 = 4.",
+    "correctAnswer": "4.0"
+  },
+  {
+    "id": "784f5d8abeae0138940335474c1541e0",
+    "type": "short_answer",
+    "text": "Suppose that the supply for a good is given by the equation Q_S = 2P + 5. &nbsp; How many units are supplied at price 2?",
+    "feedback": "Feedback: As with the previous question, you can solve this using algebra. Plug in the given price for P and solve the equation to find units supplied. Supply at price 2 is given by Q_S = 2*2 + 5 = 9.&nbsp;",
+    "correctAnswer": "9.0"
+  },
+  {
+    "id": "50174d64f795e61f2633b41241809776",
+    "type": "multiple_choice",
+    "text": "Suppose that consumers will buy 100 units of a good at price 10 and 50 units at price 20 and that the demand curve is linear. Find the inverse demand equation. &nbsp;",
+    "options": [
+      {
+        "text": "&nbsp;P = 150 – 5Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 30 + (1/5)Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 30 – (1/5)Q_D",
+        "correct": true
+      },
+      {
+        "text": "P = (1/5)Q_D - 10",
+        "correct": false
+      },
+      {
+        "text": "P = -(1/5)Q_D",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The slope of the demand curve is given by the ratio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change in Price / Change in Quantity.&nbsp;&nbsp; &nbsp;Starting with price 10 and quantity 100, a change in price to 20 causes a reduction in quantity demanded to 50. This represents a change in price of 20 – 10 = 10 and a change in quantity of 50 – 100 = -50, so the demand curve has slope of 10/-50 = -1/5.&nbsp;&nbsp; &nbsp;Since the demand curve is linear, it can be represented in the form:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp; Intercept – Slope * Q_D &nbsp;&nbsp; &nbsp;Since we know slope equals -1/5, it can be simplified in the form:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – (1/5)*Q_D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;To solve for the Intercept in this equation, substitute either of the known pairs of values (P = 10, Q = 100) or (P = 20, Q = 50):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – 1/5*50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intercept&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; 30&nbsp;&nbsp; &nbsp;That is, the demand curve is represented by the linear equation P = 30 – (1/5)*Q_D."
+  },
+  {
+    "id": "075b8af3a2990a5cf228bc70fb333654",
+    "type": "multiple_choice",
+    "text": "A demand equation is Q_D = 150 – 5P. &nbsp; Invert and graph the equation. Which graph matches your equation? &nbsp;",
+    "options": [
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": true
+      }
+    ],
+    "feedback": "Feedback: Since the convention in microeconomics is to produce graphs with quantity on the horizontal axis and price on the vertical axis, we have to invert this equation to express price in terms of quantity in order to graph it in the standard format. &nbsp; Since Q = 150 – 5P, we know 5P = 150 – Q, or P = 30 – Q/5. So this is the equation that we will use to graph the demand curve. &nbsp; We can identify the correct graph by finding at least two points. Two easy points are the two intercepts. When P = 0, Q = 150. When Q = 0, P = 30."
+  },
+  {
+    "id": "90daf22158d31cb2ab7042daa84ac849",
+    "type": "multiple_choice",
+    "text": "Suppose that producers will supply 4 units at price 2 and that the supply curve is linear and that for each increase of 1 unit in price, the quantity supplied increases by 4 units. Find the inverse supply equation. &nbsp;",
+    "options": [
+      {
+        "text": "P = 4Q_S – 4",
+        "correct": false
+      },
+      {
+        "text": "P = 4Q_S – 14",
+        "correct": false
+      },
+      {
+        "text": "P = (1/4)Q_S",
+        "correct": false
+      },
+      {
+        "text": "P = (1/4)Q_S + 1",
+        "correct": true
+      },
+      {
+        "text": "P = (1/4)Q_S + 3.5",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The inverse supply equation can be represented in the following form:&nbsp;Price = Intercept + Slope * Quantity.&nbsp;We know that when the price increases by 1 the quantity supplied increases by 4 units, so the slope is 1/4. To solve for the intercept, substitute the known values (Q = 4, P = 2) and slope = 1/4:2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intercept + (1/4)*42&nbsp; - 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InterceptIntercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1So the inverse supply equation is P = 1 + (1/4)Q_S"
+  },
+  {
+    "id": "8d60271a70281f9a3c2352be32169a41",
+    "type": "multiple_choice",
+    "text": "Graph your supply curve from Question #5. Which graph matches yours? &nbsp;",
+    "options": [
+      {
+        "text": "&nbsp;",
+        "correct": true
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: To graph the supply equation Q_S = 4P – 4 with quantity on the x-axis and price on the y-axis, we need to first invert the relationship to express price in terms of quantity: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q = 4P – 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4P = Q + 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P = 1 + Q/4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This equation gives a negative value for supply at price &lt; 1, so we interpret this to mean that supply equals 0 for any price less than 1.&nbsp; We know that the y-intercept must be 1, and Option A is the only option that has a y-intercept of 1."
+  },
+  {
+    "id": "29560f5d2d8f924d1d516ecdfb511393",
+    "type": "multiple_choice",
+    "text": "Consider the following: &nbsp; The demand equation is:&nbsp;&nbsp;&nbsp; Q_D = 8 – 4P&nbsp;&nbsp; &nbsp; The supply equation is:&nbsp;&nbsp;&nbsp; Q_S = 2P + 5&nbsp;&nbsp; &nbsp; What is the market equilibrium price and quantity? Enter your answers separately below."
+  },
+  {
+    "id": "44bc78ed10f72364a586129e818240e4",
+    "type": "short_answer",
+    "text": "What is the market equilibrium price?",
+    "feedback": "Feedback: Set the two equations equal to each other in order to find where the supply and demand curves intersect: 8 – 4P = 2P + 5 &nbsp; Solve for P. 8 – 4P = 2P + 5 8 – 5 = 2P + 4P 3 = 6P P = 0.5 &nbsp; At the market equilibrium, price = 0.5",
+    "correctAnswer": "0.5"
+  },
+  {
+    "id": "54508d511e91a9bdcc36eb06be09cbae",
+    "type": "short_answer",
+    "text": "What is the market equilibrium quantity?",
+    "feedback": "Feedback: Solve for P (you did this in the previous question).&nbsp; Then plug the value P = 0.5 into either the demand or supply equation to find the equilibrium. Q_D = 8 – 4P Q_D = 8 – 4*0.5 Q_D = 6 OR Q_S = 2P + 5 Q_S = 2*0.5 + 5 Q_S = 6 &nbsp; At the market equilibrium, quantity = 6.",
+    "correctAnswer": "6.0"
+  },
+  {
+    "id": "g294da5dae4551d93e8af4852b525c394",
+    "type": "multiple_choice",
+    "text": "Note that Canvas automatically formats numerical inputs, adding four decimal places.&nbsp; For example, a response of \"1\" will appear as \"1.0000\".&nbsp; Please disregard this unnecessary format change."
+  },
+  {
+    "id": "g5920b150e81eb62475f486a23d52bb37",
+    "type": "short_answer",
+    "text": "Suppose that the demand for a good is given by the equation Q_D = 8 – 4P. How many units are demanded at price 1?",
+    "feedback": "Feedback: You can solve this using algebra. Plug in the given price for P and solve the equation to find units demanded. Demand at price 1 is given by Q_D = 8 – 4*1 = 4.",
+    "correctAnswer": "4.0"
+  },
+  {
+    "id": "g58ead8ba3f400efdf16a07471c538c45",
+    "type": "short_answer",
+    "text": "Suppose that the supply for a good is given by the equation Q_S = 2P + 5. How many units are supplied at price 2?",
+    "feedback": "Feedback: As with the previous question, you can solve this using algebra. Plug in the given price for P and solve the equation to find units supplied. Supply at price 2 is given by Q_S = 2*2 + 5 = 9.&nbsp;",
+    "correctAnswer": "9.0"
+  },
+  {
+    "id": "g2769b9e91b8d4fcb9aa1e0a5b3b655a9",
+    "type": "multiple_choice",
+    "text": "Suppose that consumers will buy 100 units of a good at price 10 and 50 units at price 20 and that the demand curve is linear. Find the inverse demand equation.",
+    "options": [
+      {
+        "text": "&nbsp;P = 150 – 5Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 30 + (1/5)Q_D",
+        "correct": false
+      },
+      {
+        "text": "P = 30 – (1/5)Q_D",
+        "correct": true
+      },
+      {
+        "text": "P = (1/5)Q_D - 10",
+        "correct": false
+      },
+      {
+        "text": "P = -(1/5)Q_D",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The slope of the demand curve is given by the ratio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change in Price / Change in Quantity.&nbsp;&nbsp; &nbsp;Starting with price 10 and quantity 100, a change in price to 20 causes a reduction in quantity demanded to 50. This represents a change in price of 20 – 10 = 10 and a change in quantity of 50 – 100 = -50, so the demand curve has slope of 10/-50 = -1/5.&nbsp;&nbsp; &nbsp;Since the demand curve is linear, it can be represented in the form:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp; Intercept – Slope * Q_D &nbsp;&nbsp; &nbsp;Since we know slope equals -1/5, it can be simplified in the form:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – (1/5)*Q_D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;To solve for the Intercept in this equation, substitute either of the known pairs of values (P = 10, Q = 100) or (P = 20, Q = 50):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – 1/5*50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; Intercept – 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intercept&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; 30&nbsp;&nbsp; &nbsp;That is, the demand curve is represented by the linear equation P = 30 – (1/5)*Q_D."
+  },
+  {
+    "id": "gfb43e8adb403e5295c6ab12552d1c128",
+    "type": "multiple_choice",
+    "text": "A demand equation is Q_D = 150 – 5P. Invert and graph the equation. Which graph matches your equation?",
+    "options": [
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": true
+      }
+    ],
+    "feedback": "Feedback: Since the convention in microeconomics is to produce graphs with quantity on the horizontal axis and price on the vertical axis, we have to invert this equation to express price in terms of quantity in order to graph it in the standard format. &nbsp; Since Q = 150 – 5P, we know 5P = 150 – Q, or P = 30 – Q/5. So this is the equation that we will use to graph the demand curve. &nbsp; We can identify the correct graph by finding at least two points. Two easy points are the two intercepts. When P = 0, Q = 150. When Q = 0, P = 30."
+  },
+  {
+    "id": "g498c987c9cc899ee09dadfe78821b384",
+    "type": "multiple_choice",
+    "text": "Suppose that producers will supply 4 units at price 2 and that the supply curve is linear and that for each increase of 1 unit in price, the quantity supplied increases by 4 units. Find the inverse supply equation.",
+    "options": [
+      {
+        "text": "P = 4Q_S – 4",
+        "correct": false
+      },
+      {
+        "text": "P = 4Q_S – 14",
+        "correct": false
+      },
+      {
+        "text": "P = (1/4)Q_S",
+        "correct": false
+      },
+      {
+        "text": "P = (1/4)Q_S + 1",
+        "correct": true
+      },
+      {
+        "text": "P = (1/4)Q_S + 3.5",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: The inverse supply equation can be represented in the following form:&nbsp;Price = Intercept + Slope * Quantity.&nbsp;We know that when the price increases by 1 the quantity supplied increases by 4 units, so the slope is 1/4. To solve for the intercept, substitute the known values (Q = 4, P = 2) and slope = 1/4:2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intercept + (1/4)*42&nbsp; - 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InterceptIntercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1So the inverse supply equation is P = 1 + (1/4)Q_S"
+  },
+  {
+    "id": "ge64e8372a2628ba66470319976a99fbb",
+    "type": "multiple_choice",
+    "text": "Graph your supply curve from Question #5. Which graph matches yours?",
+    "options": [
+      {
+        "text": "&nbsp;",
+        "correct": true
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      },
+      {
+        "text": "&nbsp;",
+        "correct": false
+      }
+    ],
+    "feedback": "Feedback: To graph the supply equation Q_S = 4P – 4 with quantity on the x-axis and price on the y-axis, we need to first invert the relationship to express price in terms of quantity: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q = 4P – 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4P = Q + 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P = 1 + Q/4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This equation gives a negative value for supply at price &lt; 1, so we interpret this to mean that supply equals 0 for any price less than 1.&nbsp; We know that the y-intercept must be 1, and Option A is the only option that has a y-intercept of 1."
+  },
+  {
+    "id": "g2baf728f1a95e103732afbbd0aaffb3e",
+    "type": "multiple_choice",
+    "text": "Consider the following: The demand equation is:&nbsp;&nbsp;&nbsp; Q_D = 8 – 4P&nbsp;&nbsp; &nbsp;The supply equation is:&nbsp;&nbsp;&nbsp; Q_S = 2P + 5&nbsp;&nbsp; &nbsp;What is the market equilibrium price and quantity? Enter your answers separately below."
+  },
+  {
+    "id": "g2ab1499edfdaf332d4d01d53fb40176b",
+    "type": "short_answer",
+    "text": "What is the market equilibrium price?",
+    "feedback": "Feedback: Set the two equations equal to each other in order to find where the supply and demand curves intersect: 8 – 4P = 2P + 5 &nbsp; Solve for P. 8 – 4P = 2P + 5 8 – 5 = 2P + 4P 3 = 6P P = 0.5 &nbsp; At the market equilibrium, price = 0.5",
+    "correctAnswer": "0.5"
+  },
+  {
+    "id": "g17c7dee295681a28fe0b09b0240838b7",
+    "type": "short_answer",
+    "text": "What is the market equilibrium quantity?",
+    "feedback": "Feedback: Solve for P (you did this in the previous question).&nbsp; Then plug the value P = 0.5 into either the demand or supply equation to find the equilibrium. Q_D = 8 – 4P Q_D = 8 – 4*0.5 Q_D = 6 OR Q_S = 2P + 5 Q_S = 2*0.5 + 5 Q_S = 6 &nbsp; At the market equilibrium, quantity = 6.",
+    "correctAnswer": "6.0"
+  },
+  {
+    "id": "g3ccd7c85c663f42a5e36a173ee3c517b",
+    "type": "multiple_choice",
+    "text": "After you submit this quiz, read the feedback and consider whether there is module content you wish to review."
+  }
+]
