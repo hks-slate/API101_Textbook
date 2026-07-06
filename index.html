@@ -240,6 +240,79 @@
       color: var(--home-crimson);
     }
 
+    .home-credits {
+      max-width: none;
+      margin: 0;
+      padding: var(--space-3xl) max(var(--space-xl), calc((100vw - 72rem) / 2 + var(--space-xl)));
+      background: #fff;
+      display: grid;
+      grid-template-columns: 14rem minmax(0, 1fr);
+      gap: var(--space-3xl);
+      border-top: 1px solid var(--home-rule);
+    }
+
+    .credits-heading h2 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.65rem;
+      color: var(--home-ink);
+    }
+
+    .credits-heading p {
+      color: var(--home-muted);
+      line-height: 1.6;
+      margin: var(--space-md) 0 0;
+      font-size: 0.98rem;
+    }
+
+    .credits-list {
+      border-top: 2px solid var(--home-ink);
+    }
+
+    .credit-entry {
+      display: grid;
+      grid-template-columns: 13rem minmax(0, 1fr);
+      gap: var(--space-xl);
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--home-rule);
+    }
+
+    .credit-entry__role {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      line-height: 1.45;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: var(--home-crimson);
+    }
+
+    .credit-entry__body {
+      color: var(--home-muted);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .credit-entry__body p {
+      margin: 0 0 var(--space-md);
+    }
+
+    .credit-entry__body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .credit-entry__body a {
+      color: var(--home-crimson);
+      font-weight: 700;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    .credit-entry__body a:hover {
+      color: var(--home-crimson-dark);
+    }
+
     .home-footer {
       max-width: 72rem;
       margin: 0 auto;
@@ -289,12 +362,15 @@
 
       .home-masthead__inner,
       .home-content,
+      .home-credits,
       .path-item,
-      .path-item--checkpoint {
+      .path-item--checkpoint,
+      .credit-entry {
         grid-template-columns: 1fr;
       }
 
-      .home-content {
+      .home-content,
+      .home-credits {
         gap: var(--space-xl);
         padding-left: var(--space-xl);
         padding-right: var(--space-xl);
@@ -345,6 +421,7 @@
 
       .home-masthead__inner,
       .home-content,
+      .home-credits,
       .home-footer {
         padding-left: var(--space-lg);
         padding-right: var(--space-lg);
@@ -372,6 +449,7 @@
     </a>
     <ul class="site-nav__links">
       <li><a href="#modules">Modules</a></li>
+      <li><a href="#credits">Credits</a></li>
     </ul>
   </nav>
 
@@ -481,6 +559,62 @@
           </div>
           <div class="path-item__action">Finish</div>
         </a>
+      </div>
+    </section>
+
+    <section class="home-credits" id="credits">
+      <div class="credits-heading">
+        <h2>Credits</h2>
+        <p>
+          This interactive textbook reflects a collaborative effort to make core microeconomic concepts more accessible, visual, and practice-oriented for API-101 students.
+        </p>
+      </div>
+
+      <div class="credits-list" aria-label="Credits and acknowledgments">
+        <article class="credit-entry">
+          <div class="credit-entry__role">Teaching Fellow Author and Developer</div>
+          <div class="credit-entry__body">
+            <p>
+              <a href="https://jacobjameson.com">Jacob Jameson</a> authored and developed the interactive textbook experience. His work included drafting and adapting instructional content, designing the interactive visualizations, building the graphing tools and practice activities, developing the quiz and self-check systems, and translating faculty-authored material into a web-based learning sequence for API-101 students.
+            </p>
+          </div>
+        </article>
+
+        <article class="credit-entry">
+          <div class="credit-entry__role">Faculty Authors</div>
+          <div class="credit-entry__body">
+            <p>
+              <a href="https://www.hks.harvard.edu/faculty/pinar-dogan">Pınar Doğan</a> and <a href="https://www.hks.harvard.edu/faculty/juan-saavedra">Juan Saavedra</a> shaped the academic foundation of this learning experience, including the core microeconomic concepts, policy framing, and instructional priorities for API-101.
+            </p>
+          </div>
+        </article>
+
+        <article class="credit-entry">
+          <div class="credit-entry__role">Generative AI Consultant</div>
+          <div class="credit-entry__body">
+            <p>
+              Mae Klinger led the design of the course chatbot that accompanies these materials. The chatbot was developed to serve as a supportive tutor as students work through the interactive textbook, helping them reason through concepts, practice problems, and points of confusion. Juan Saavedra and Jacob Jameson also contributed to the generative AI components of the learning experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="credit-entry">
+          <div class="credit-entry__role">Digital Learning Designer</div>
+          <div class="credit-entry__body">
+            <p>
+              Maria Flanagan guided the organization, accessibility, and instructional design of the materials. Her work helped ensure that the content was coherent, navigable, student-centered, and ready for use in Canvas and the online textbook environment.
+            </p>
+          </div>
+        </article>
+
+        <article class="credit-entry">
+          <div class="credit-entry__role">Acknowledgments</div>
+          <div class="credit-entry__body">
+            <p>
+              This learning experience builds on a first edition authored by Janina Matuszeski, Felix Owusu, and Pınar Doğan, with excerpts adapted from the <em>Principles of Economics</em> textbook from <a href="https://openstax.org/books/principles-economics-3e/pages/preface">OpenStax</a>.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
