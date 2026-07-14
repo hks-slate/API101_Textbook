@@ -9,6 +9,21 @@
     <link href="../css/theme.css?v=3" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5F46D75B');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44DLT44QKT"></script>
     <script>
@@ -28,6 +43,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   </head>
   <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F46D75B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
     <!-- Navigation Bar -->
     <nav class="site-nav">
       <a class="site-nav__brand" href="../index.html" aria-label="Harvard Kennedy School"
@@ -411,6 +433,7 @@
         <!-- Check: Law of Demand MC -->
         <div
           class="check-understanding"
+          data-id="law-of-demand-mc"
           data-correct="1"
           data-explanation="The schedule shows an inverse relationship between price and quantity demanded: as price rises, quantity demanded falls, holding all else equal. A price change causes a movement along the demand curve, not a fall in demand itself."
           data-question="Looking at the sugar demand schedule, which statement best captures the law of demand?">
@@ -447,7 +470,7 @@
 
         <!-- Self-check: demand equation calculation -->
 
-        <div class="self-check">
+        <div class="self-check" data-id="demand-equation-calculation">
           <div class="self-check__question">
             If the demand equation is \(Q_D = 50 - 10P\), what is the quantity demanded when the
             price is €3.50 per kilogram?
@@ -876,7 +899,7 @@
           increase now results in a bigger reduction in the quantity demanded.
         </p>
 
-        <div class="self-check">
+        <div class="self-check" data-id="demand-graph-intercepts">
           <div class="self-check__question">
             The demand equation is \(Q_D = 50 - 10P\). Without drawing the graph, identify: (a) the
             price when quantity demanded is zero, (b) the quantity demanded when the price is zero,
@@ -1177,6 +1200,12 @@
         _interactiveUpdate = update;
         aSlider.addEventListener('input', update);
         bSlider.addEventListener('input', update);
+        aSlider.addEventListener('change', function () {
+          trackEvent('slider_change', { id: 'demand-intercept' });
+        });
+        bSlider.addEventListener('change', function () {
+          trackEvent('slider_change', { id: 'demand-slope' });
+        });
         if (resetBtn) {
           resetBtn.addEventListener('click', function () {
             aSlider.value = cfg.interactiveDefaults.a;

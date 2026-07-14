@@ -8,6 +8,21 @@
     <link href="../css/theme.css?v=3" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5F46D75B');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44DLT44QKT"></script>
     <script>
@@ -27,6 +42,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   </head>
   <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F46D75B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
     <!-- Navigation Bar -->
     <nav class="site-nav">
       <a class="site-nav__brand" href="../index.html" aria-label="Harvard Kennedy School"
@@ -154,6 +176,7 @@
         <!-- Check: Law of Supply MC -->
         <div
           class="check-understanding"
+          data-id="law-of-supply-mc"
           data-correct="1"
           data-explanation="The law of supply states that higher prices give producers a stronger incentive to increase output, so quantity supplied rises. The supply curve itself does not shift just because price changes."
           data-question="According to the law of supply, what happens when the price of a good rises?">
@@ -245,7 +268,7 @@
           price, producers increase the quantity supplied by 15 million kg.
         </p>
 
-        <div class="self-check">
+        <div class="self-check" data-id="supply-demand-slope-comparison">
           <div class="self-check__question">
             Slope of the supply function is 15. Recall that the slope of the demand function is 10.
             Which side of the market, supply or demand, is more sensitive to price changes?
@@ -312,7 +335,7 @@
 
         <!-- Self-check: supply equation calculation -->
 
-        <div class="self-check">
+        <div class="self-check" data-id="supply-equation-calculation">
           <div class="self-check__question">
             If the supply equation is \(Q_S = 15P\), how many millions of kilograms are supplied
             when the price is €3 per kilogram?
@@ -614,7 +637,7 @@
           responsive to price signals.
         </p>
 
-        <div class="self-check">
+        <div class="self-check" data-id="supply-graph-slope-interpretation">
           <div class="self-check__question">
             In the EU sugar supply equation \(Q_S = 15P\), the slope coefficient \(d = 15\). What
             does this number tell you about sugar beet farmers as a group — and how would a larger

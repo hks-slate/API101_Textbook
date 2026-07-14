@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="../css/theme.css?v=3" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5F46D75B');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44DLT44QKT"></script>
     <script>
@@ -26,6 +41,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   </head>
   <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F46D75B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
     <!-- Navigation Bar -->
     <nav class="site-nav">
       <a href="../index.html" class="site-nav__brand" aria-label="Harvard Kennedy School"
@@ -265,7 +287,7 @@
           </p>
         </div>
 
-        <div class="self-check">
+        <div class="self-check" data-id="sugar-sweeteners-taste-shift">
           <div class="self-check__question">
             Suppose consumers in the EU increasingly switch from sugar to artificial sweeteners.
             What happens to the demand curve for sugar?
@@ -280,6 +302,7 @@
 
         <div
           class="check-understanding"
+          data-id="coffee-tea-substitute"
           data-question="When the price of coffee rises sharply, what happens to the demand for tea (a substitute)?"
           data-correct="1"
           data-explanation="Tea is a substitute for coffee. When coffee becomes more expensive, consumers switch to tea. At every price level, more tea is now demanded — the demand curve for tea shifts right (increases).">
@@ -366,7 +389,7 @@
           </div>
         </div>
 
-        <div class="self-check">
+        <div class="self-check" data-id="weather-supply-shift">
           <div class="self-check__question">
             Exceptionally hot weather and very little rainfall reduce agricultural yields. What
             happens to the supply curve for sugar?
@@ -583,6 +606,7 @@
 
         <div
           class="check-understanding"
+          data-id="drought-wheat-four-step"
           data-question="A drought destroys a large portion of the wheat harvest. Using the four-step process, which curve shifts, why does it shift that way, and what happens to the equilibrium price and quantity of wheat?"
           data-correct="2"
           data-explanation="A drought reduces the ability to produce wheat — this is a supply shifter (natural conditions). Supply decreases, shifting the supply curve left. With the same demand, a leftward supply shift raises equilibrium price and reduces equilibrium quantity.">

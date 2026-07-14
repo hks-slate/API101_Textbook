@@ -8,6 +8,21 @@
     <link href="../css/theme.css?v=3" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" rel="stylesheet" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5F46D75B');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44DLT44QKT"></script>
     <script>
@@ -27,6 +42,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   </head>
   <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5F46D75B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
     <!-- Navigation Bar -->
     <nav class="site-nav">
       <a class="site-nav__brand" href="../index.html" aria-label="Harvard Kennedy School"
@@ -178,7 +200,7 @@
           made an error.
         </p>
         <!-- Self-check: find equilibrium -->
-        <div class="self-check">
+        <div class="self-check" data-id="find-equilibrium">
           <div class="self-check__question">
             Set \(Q_D = 50 - 10P\) equal to \(Q_S = 15P\) and solve for the equilibrium price and
             quantity.
@@ -367,6 +389,7 @@
         <!-- Check: surplus or shortage -->
         <div
           class="check-understanding"
+          data-id="surplus-or-shortage"
           data-correct="1"
           data-explanation="At \(P = 3\): \(Q_S = 15(3) = 45\) and \(Q_D = 50 − 10(3) = 20\). Since \(Q_S\) (45) &gt; \(Q_D\) (20), there is a surplus of 25 million kg. This excess supply creates downward pressure on the price, pushing it back toward the equilibrium of \(P^* = 2\)."
           data-question="At a price of 3 (above equilibrium) with \(Q_D = 50 − 10P\) and \(Q_S = 15P\), what is the market condition?">
@@ -524,7 +547,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="self-check">
+        <div class="self-check" data-id="demand-shift-new-equilibrium">
           <div class="self-check__question">
             If the demand equation changes to \(Q_D = 70 - 10P\) (demand intercept increases from 50
             to 70) and supply stays at \(Q_S = 15P\), what is the new equilibrium price and

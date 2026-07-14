@@ -5,3 +5,7 @@
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Internal markdown notes (not for the public repo)
+*.md
+!README.md

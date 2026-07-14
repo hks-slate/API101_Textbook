@@ -13,6 +13,23 @@
    ============================================================ */
 
 /* -------------------------------------------------------
+   0. ANALYTICS EVENT TRACKING
+   Pushes structured events to the GTM data layer. `module`
+   and `page_title` are derived automatically so callers only
+   need to supply event-specific fields.
+   ------------------------------------------------------- */
+function trackEvent(name, params = {}) {
+  window.dataLayer = window.dataLayer || [];
+  const moduleEl = document.querySelector('.chapter-header__number');
+  dataLayer.push({
+    event: name,
+    module: moduleEl ? moduleEl.textContent.trim() : 'Home',
+    page_title: document.title,
+    ...params
+  });
+}
+
+/* -------------------------------------------------------
    1. ECON GRAPH — D3.js Utility Library
    Clean, consistent economics graph primitives.
    All graphs use this for uniform styling.
@@ -531,6 +548,8 @@ const CheckUnderstanding = {
 
           const isCorrect = idx === correctIdx;
 
+          trackEvent('check_understanding_answer', { id: container.dataset.id, is_correct: isCorrect });
+
           // Mark all options
           options.forEach((o, i) => {
             o.classList.add('check-understanding__option--answered');
@@ -587,7 +606,8 @@ const PracticeQuiz = {
       current: 0,
       answers: new Array(validQs.length).fill(null),
       checked: new Array(validQs.length).fill(false),
-      correct: new Array(validQs.length).fill(false)
+      correct: new Array(validQs.length).fill(false),
+      completionFired: false
     };
 
     function cleanHTML(str) {
@@ -624,6 +644,13 @@ const PracticeQuiz = {
         state.correct[index] = !isNaN(userAnswer) && !isNaN(correctAnswer) &&
           Math.abs(userAnswer - correctAnswer) <= tolerance;
       }
+
+      trackEvent('quiz_answer', {
+        quiz_id: title,
+        question_id: q.id,
+        skill: q.skill,
+        is_correct: state.correct[index]
+      });
     }
 
     function renderQuestionMeta(q) {
@@ -651,6 +678,14 @@ const PracticeQuiz = {
       const pct = Math.round((checkedCount / validQs.length) * 100);
       const allChecked = checkedCount === validQs.length;
       const numCorrect = state.correct.filter(Boolean).length;
+
+      if (allChecked && !state.completionFired) {
+        state.completionFired = true;
+        trackEvent('quiz_complete', {
+          quiz_id: title,
+          score_pct: Math.round((numCorrect / validQs.length) * 100)
+        });
+      }
 
       let html = `
         <div class="practice-quiz practice-quiz--all">
@@ -875,6 +910,7 @@ const PracticeQuiz = {
         state.answers.fill(null);
         state.checked.fill(false);
         state.correct.fill(false);
+        state.completionFired = false;
         render();
       });
     }
@@ -922,6 +958,7 @@ const PracticeQuiz = {
         state.answers.fill(null);
         state.checked.fill(false);
         state.correct.fill(false);
+        state.completionFired = false;
         renderAll();
       });
     }
@@ -1035,6 +1072,9 @@ const SelfCheck = {
         answer.classList.toggle('self-check__answer--visible');
         btn.textContent = answer.classList.contains('self-check__answer--visible') ? 'Hide Answer' : 'Show Answer';
         this.renderMath(container);
+        if (answer.classList.contains('self-check__answer--visible')) {
+          trackEvent('self_check_reveal', { id: container.dataset.id });
+        }
       });
     });
   }
@@ -1184,6 +1224,8 @@ const Flashcards = {
           }
         });
         if (terms.length === 0) return;
+
+        trackEvent('flashcard_open', { id: tableId });
 
         this.open(terms);
       });
@@ -1599,6 +1641,8 @@ const DrawGraph = {
         submitted = true;
         drawArea.style('cursor', 'default');
         clickLayer.style('cursor', 'default');
+
+        trackEvent('draw_graph_result', { id: selector.replace('#', ''), is_correct: isCorrect });
 
         // Show correct line
         if (config.correctLine) {
